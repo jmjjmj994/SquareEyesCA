@@ -1,98 +1,67 @@
 
+*{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+}
 
 
 body {
-    background:red;
-    display: grid;
-    border: 5px solid black;
-    grid-template-rows: auto auto 1fr auto;
-   
-    
-    gap: 1em;
+gap: 1em;
+min-height: 100vh;
+display: grid;
+grid-template-rows: auto auto 1fr auto;
+grid-template-areas: 
+'banner '
+'nav'
+'main '
+'footer';   
+}
 
-    grid-template-areas: 
-    'banner'
-    'nav'
-    'main'
-    ' footer'
-    ;
-    
+header {grid-area: banner;}
+nav {grid-area: nav;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+
+
+
+
+
+
+/* Styling */
+
+body {
+
+background-color: var(--purple);
 
 }
 
 
-/*Header banner*/
-header {background-color: white;grid-area: banner;}
+header, nav, main, footer {
 
-.selogo {
-    width:auto;
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
+background-color: var(--zilla);
+color: var(--background);
+border: 2px solid white;
 }
-/*Header banner above */
-
-/*Nav bar*/	
-nav {background-color: white;  grid-area:nav;}
-.nav-side-bar {
-    display: flex;
-    outline: 1px dotted red;
+:root {
+--background: #f5f5f5;
+--zilla: #000000;
+--purple: #8a2be2;
+--red: #ff0000;
+}
     
-    
-
-}
-
-.sidebaricon {
-    display: flex;
-    height: 10em;
-    justify-content: space-around;
-    align-items: center;
-}
+/* Styling */
 
 
-
-/*Nav bar above*/
-main {background-color: white; grid-area: main;}
-
-footer {background-color: white; grid-area: footer;}
+@media (min-width: 500px) {
 
 
-
-
-
-
-@media (min-width:600px )
-{
     body {
-       min-height: 100vh;
-        grid-template-columns: 12em 1fr;
-        grid-template-rows: auto 1fr auto ;
-        background-color: orange;
-        grid-template-areas: 
-        'banner banner'
-        'nav main'
-        'nav footer';
-    }
+        background-color: var(--red);
+        grid: 'banner banner' auto
+              'nav main' 1fr
+              'nav footer' auto
+            / 12em 1fr;
+      }
 
-    header {grid-column: span 2;}
-
-    nav {grid-row: span 2;}
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-   
 }
