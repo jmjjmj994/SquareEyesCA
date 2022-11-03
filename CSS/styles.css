@@ -1,106 +1,98 @@
-* {
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+
+
+
+body {
+    background:red;
+    display: grid;
+    border: 5px solid black;
+    grid-template-rows: auto auto 1fr auto;
+   
+    
+    gap: 1em;
+
+    grid-template-areas: 
+    'banner'
+    'nav'
+    'main'
+    ' footer'
+    ;
+    
+
 }
 
 
+/*Header banner*/
+header {background-color: white;grid-area: banner;}
 
-.hero-banner > img {
-    width: auto;
+.selogo {
+    width:auto;
     height: 100px;
     margin-left: auto;
     margin-right: auto;
     display: block;
 }
+/*Header banner above */
 
-
-/*navbar under */
-.navigation-container  {
-    
-
-    /*GRID*/
-    outline: 2px dotted red;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 2fr;
-    /*GRID*/ 
-}
-
-.ul-flex {
+/*Nav bar*/	
+nav {background-color: white;  grid-area:nav;}
+.nav-side-bar {
     display: flex;
-    justify-content: center;
-    flex-grow: 1;
-    flex-shrink: 1;
-    height: 10vh;
+    outline: 1px dotted red;
+    
+    
+
+}
+
+.sidebaricon {
+    display: flex;
+    height: 10em;
+    justify-content: space-around;
     align-items: center;
-    gap: 1em;
 }
-.box {
+
+
+
+/*Nav bar above*/
+main {background-color: white; grid-area: main;}
+
+footer {background-color: white; grid-area: footer;}
+
+
+
+
+
+
+@media (min-width:600px )
+{
+    body {
+       min-height: 100vh;
+        grid-template-columns: 12em 1fr;
+        grid-template-rows: auto 1fr auto ;
+        background-color: orange;
+        grid-template-areas: 
+        'banner banner'
+        'nav main'
+        'nav footer';
+    }
+
+    header {grid-column: span 2;}
+
+    nav {grid-row: span 2;}
     
-    height: 10vh;
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
    
 }
-
-/*Navbar over */
-
-a:nth-child(1) {
-    flex-grow: 1;
-}
-a:nth-child(2) {
-    flex-grow: 1;
-}
-a:nth-child(3) {
-    flex-grow: 1;
-}
-a:nth-child(4) {
-    flex-grow: 1;
-}
-a:nth-child(5) {
-    flex-grow: 1;
-}
-
-
-
-
-.main-wrapper {
-    display:flex;
-    
-    justify-content: center;
-    
-    background-color: grey;
-height: 30vh;
-
-
-
-   
-}
-
-.movies {
-    width: auto;
-    height:100px ;
- 
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-/* Desktop */
-@media screen and (min-width: 500px) {
-
-   body {
-    background-color: orange;
-   }
-
-}
-
-/*Desktop*/

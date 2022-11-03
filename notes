@@ -1,1 +1,49 @@
-1. Switch ut navbar items with fonts
+<!--
+    <div class="top-img">
+        <img class="movies" src="./Images/Square_Eyes_Cover1.jpeg" alt="Hobbs&Shaw">
+        <img class="movies" src="./Images/Square_Eyes_Cover2.jpeg" alt="Godzilla">
+        <img class="movies" src="./Images/Square_Eyes_Cover3.jpeg" alt="Hollywood">
+        
+        <img class="movies" src="./Images/Square_Eyes_Cover4.jpeg" alt="Scream">
+        <div class="bottom-img">
+        <img class="movies" src="./Images/Square_Eyes_Cover5.jpeg" alt="Sweetheart">
+        <img class="movies" src="./Images/Square_Eyes_Cover6.jpeg" alt="Addams">
+        <img class="movies" src="./Images/Square_Eyes_Cover7.jpeg" alt="Batman">
+        <img class="movies" src="./Images/Square_Eyes_Cover8.jpeg" alt="ToyStory">
+        
+        
+        
+        
+        </div>
+            </div>
+                
+        -->
+
+
+
+        /*
+        .main-wrapper {
+           display: flex;
+            background-color: grey;
+            justify-content: center;
+            height: 30vh;
+        ;
+        
+        
+           
+        }
+        
+        .movies {
+            width: auto;
+            height:100px ;
+            
+        
+        
+        }
+        
+*/        
+
+<i class="fa-brands fa-cc-mastercard"></i>
+<i class="fa-brands fa-cc-visa"></i>
+<i class="fa-brands fa-cc-paypal"></i>
+<i class="fa-brands fa-google-pay"></i>
