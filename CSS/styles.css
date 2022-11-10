@@ -107,43 +107,42 @@ li {
 
 /* MAIN */
 :root {
-      --cardWidth: 150px;
-      --cardHeight: 200px;
-      --cardMargin: 5px;
-      --cardborder:8px
+      --cardWidth: 250px;
+      --cardHeight: 250px;
+      --cardMargin: 16px;
     }
     
-
-
+  
+  
     .main-section {
-      position: relative;
       display: flex;
-      justify-content: center;
+      justify-content: flex-start;
       flex-wrap: wrap;
-
-      background: rgb(246, 246, 246);
+      background: rgb(255, 255, 255);
+     
     }
     .card {
       width: var(--cardWidth);
       height: var(--cardHeight);
       margin: var(--cardMargin);
-      border: 1px solid #ccc;
+      border: 0.4px solid rgb(239, 231, 231);
       border-radius: 8px;
-      background: #fff;
+      background: rgb(255, 255, 255);
       box-sizing: border-box;
     }
-    
-
-    .section-movies {
-width: var(--cardWidth);
-height: var(--cardHeight);
-border-radius:var(--cardborder);
-display: block;
-
-
-
-
+    .img {
+      width: 248px;
+      border-radius: 8px;
     }
+
+    .title {
+      display: flex;
+      justify-content: center;
+      font-style: 'Poppins', sans-serif;
+      font-weight: bold;
+    }
+
+
 
 /*main*/
 
@@ -202,18 +201,55 @@ flex-wrap: wrap;
 
 @media (min-width: 600px) {
 
+      *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            }
+
+
 
     body {
         background-color: var(--red);
         grid: 'banner banner' auto
               'nav main' 1fr
               'nav footer' auto
-            / 12em 1fr;
+              / 12em 1fr;
       }
 
-      ul {
-            display: flex;
+      nav {outline: 5px dotted rgb(23, 21, 21); }
+      header {outline: 5px dotted yellow;}
+      main {outline: 5px dotted yellow; background-color: black;}
+      footer {outline: 5px dotted yellow;}
+      
+      
+      
+
+      .SElogo {
+            display: block;
+         margin-left: auto;
+         margin-right:auto;
+            border-radius: 5%;
+             width: 150px;
+             height: auto;
+       }
+       
+      .SElogo {
             
+             border-radius: 5%;
+             width: auto;
+             height: 100px;
+      
+       }
+
+
+      
+      
+      
+      ul {
+            
+            display: flex;
             height: 45em;
             
             flex-direction: column; 
@@ -234,7 +270,7 @@ flex-wrap: wrap;
              display: block;
              padding: 4px 0;
              font-family: sans-serif;
-             color: var(--zilla);
+             color: var(--background);
              text-decoration: none;
              text-transform: uppercase;
              -webkit-transition: color 1s;
@@ -245,12 +281,57 @@ flex-wrap: wrap;
        .topbar:hover {
             color: #ff0000;
         }
+.right-bar {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 1rem;
+
+
+}
 
 
 
+/* MAIN */
+:root {
+      --cardWidth: 250px;
+      --cardHeight: 250px;
+      --cardMargin: 16px;
+    }
+    
+  
+  
+    .main-section {
+      display: flex;
+      justify-content: flex-start;
+      flex-wrap: wrap;
+      background: rgb(0, 0, 0);
+     
+    }
+    .card {
+      width: var(--cardWidth);
+      height: var(--cardHeight);
+      margin: var(--cardMargin);
+      border: 0.4px solid rgb(0, 0, 0);
+      border-radius: 8px;
+      background: linear-gradient(black, #012325);
+      box-sizing: border-box;
+    }
+    .img {
+      width: 248px;
+      border-radius: 8px;
+    }
+
+    .title {
+      display: flex;
+      justify-content: center;
+      font-style: 'Poppins', sans-serif;
+      font-weight: bold;
+    }
 
 
 
+/*main*/
 
 
 
