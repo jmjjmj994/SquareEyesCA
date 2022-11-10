@@ -5,25 +5,16 @@
       --red: #ff0000;
       }
           
-
-
-
-
 *{
 margin: 0%;
 padding: 0%;
 box-sizing: border-box;
 font-family: 'Poppins', sans-serif;
 }
-html {
-      
-}
 
 body {
-
-
-     gap: 1em;
-
+      background-color: var(--background);
+gap: 1em;
 min-height: 100vh;
 display: grid;
 grid-template-rows: auto auto 1fr auto;
@@ -42,18 +33,15 @@ footer {grid-area: footer;}
 
 
 /*Styling*/
-body {
- background-color: var(--background);
-}
-
-header, nav, main, footer {
-
-background-color: var(--zilla);
-color: var(--background);
-border: 2px solid white;
-}
 
 
+nav,   footer {
+
+      background-color: var(--zilla);
+      color: var(--background);
+      }
+      
+/*navigation*/
 ul {
      display: flex;
      flex-direction: row; 
@@ -64,10 +52,34 @@ ul {
 li {
       padding: 6px 0;
 }
+.right-bar {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+}
 
 
 
-/*Topbar*/
+.topbar {
+      font-size: 15px;
+      font-weight: bold;
+      position: relative; /*Static?*/
+      display: block;
+      padding: 4px 0;
+      font-family: 'Poppins', sans-serif;
+      color: var(--background);
+      text-decoration: none;
+      text-transform: uppercase;
+      -webkit-transition: color 1s;
+      transition: color 1s;  /*change color after finish */
+
+}
+.topbar:hover {
+      color: #b60085;
+  }
+/*Navigation*/
+
+/*header logo*/
 
 
 .SElogo {
@@ -88,32 +100,55 @@ li {
  }
 
 
+/*Header logo
 
-.right-bar {
+
+
+
+/* MAIN */
+:root {
+      --cardWidth: 150px;
+      --cardHeight: 200px;
+      --cardMargin: 5px;
+      --cardborder:8px
+    }
+    
+
+
+    .main-section {
+      position: relative;
       display: flex;
       justify-content: center;
-      gap: 1rem;
-}
+      flex-wrap: wrap;
 
-.topbar {
-      font-size: 15px;
-      font-weight: bold;
-      position: relative; /*Static?*/
-      display: block;
-      padding: 4px 0;
-      font-family: 'Poppins', sans-serif;
-      color: var(--background);
-      text-decoration: none;
-      text-transform: uppercase;
-      -webkit-transition: color 1s;
-      transition: color 1s;  /*change color after finish */
+      background: rgb(246, 246, 246);
+    }
+    .card {
+      width: var(--cardWidth);
+      height: var(--cardHeight);
+      margin: var(--cardMargin);
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      background: #fff;
+      box-sizing: border-box;
+    }
+    
 
-}
-.topbar:hover {
-      color: #b60085;
-  }
+    .section-movies {
+width: var(--cardWidth);
+height: var(--cardHeight);
+border-radius:var(--cardborder);
+display: block;
 
-/*Topbar*/
+
+
+
+    }
+
+/*main*/
+
+
+
 
   /*Footer*/
 .footer-bar {
@@ -151,20 +186,6 @@ flex-wrap: wrap;
 }
 
 
-
-.fa-google-pay {
-      text-decoration: none;
-      color: inherit;
-      
-  }
-  
-  
-  .copyright {
-        font-size: x-small;
-        align-items: center;
-        display: flex;
-  }
-  
 
 /*Footer*/
 
@@ -246,43 +267,4 @@ flex-wrap: wrap;
 
 
 
-
-:root {
-      --cardWidth: 150px;
-      --cardHeight: 200px;
-      --cardMargin: 5px;
-      --cardborder:8px
-    }
-    
-
-
-    .main-section {
-      position: relative;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-
-      background: rgb(246, 246, 246);
-    }
-    .card {
-      width: var(--cardWidth);
-      height: var(--cardHeight);
-      margin: var(--cardMargin);
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      background: #fff;
-      box-sizing: border-box;
-    }
-    
-
-    .section-movies {
-width: var(--cardWidth);
-height: var(--cardHeight);
-border-radius:var(--cardborder);
-display: block;
-
-
-
-
-    }
 
