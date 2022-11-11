@@ -137,66 +137,186 @@ li {
       border-radius: 1rem;
      
     }
-    .card {
+    .card1 {
       width: var(--cardWidth);
       height: var(--cardHeight);
       margin: var(--cardMargin);
       
-      backdrop-filter: blur(10px) saturate(137%);
-      -webkit-backdrop-filter: blur(10px) saturate(137%);
-      background-color: rgba(202, 195, 245, 0.51);
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 1);
       border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.125);
+      
+      
+     
+     
 
       border-radius: 12px;
-      border: 1px solid rgba(255, 255, 255, 0.125);
-      border-radius: 8px;
+     
+     
 
       box-sizing: border-box;
     }
+.card2 {
 
+      width: var(--cardWidth);
+      height: var(--cardHeight);
+      margin: var(--cardMargin);
+      
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(59, 11, 71, 1);
+      border-radius: 12px;
+     
+
+      border-radius: 12px;
+      
+
+      box-sizing: border-box;
+
+}
     .img {
       width: var(--cardWidth);
       border-radius: 8px;
     }
 
+    .info {
+      color: gold;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
 
-    .card-long {
-display: block;
-box-sizing: border-box;
-
-background-color: var(--white);
-border-radius: 12px;
-width:53rem ;
-height: 35rem;
-margin-left: auto;
-margin-right: auto;
-
-background: rgb(255,0,0);
-background: linear-gradient(90deg, rgba(255,0,0,0.8204014027485994) 0%, rgba(0,0,0,1) 30%, rgba(25,0,0,1) 78%, rgba(255,0,0,1) 100%); 
-
-
-
-    }
-
-    .batman-stretch {
-      width:53rem;
-      height: 25rem;
-      border-radius: 12px;
-      opacity: 1;
-      display: block;
-      transition: .5s ease;
-      backface-visibility: hidden;
-
-    }
-   
+   }
 
     .title {
+      color: white;
+      font-size: 2rem;
       display: flex;
       justify-content: center;
       font-style: 'Poppins', sans-serif;
       font-weight: bold;
     }
+
+
+
+
+    .image {
+      position:relative;
+      width:100%;
+      height:35rem;
+     
+      
+    }
+    
+
+    .button {
+      font-size: larger;
+      height: 4rem;
+      width: 10rem;
+      border-radius: 1rem;
+      font-weight: bold;
+color: white;
+      background: rgb(25,0,0);
+      background: linear-gradient(90deg, rgba(25,0,0,1) 0%, rgba(254,0,0,1) 78%);
+
+    }
+    
+    .image__img {
+      display:block;
+      width:100%;
+      border-radius: 1rem;
+      
+    }
+
+
+    /*Overlay effect from Youtube, created in codepen */
+    
+    .image__overlay {
+      position:absolute;
+      top:0;
+      left:0;
+      width:100%;
+      height:100%;
+      background: rgba(0,0,0,0.6);
+      color:white;
+      display:flex;
+      font-family: 'Quicksand';
+       flex-direction:column;
+      align-items:center;
+      opacity:0;
+      justify-content:center;
+      transition: opacity 0.30s;
+    }
+    .image__overlay--blur {
+      backdrop-filter:blur(5px);
+    }
+    .image__overlay:hover {
+      opacity:1;
+    
+    }
+     .image__overlay > * {
+      transform:translateY(20px);
+      transition:transform:0.30s;
+    }
+      
+    .image__overlay:hover > * {
+     
+      
+    }
+    
+    
+    .image__title {
+      font-size:2em;
+      font-weight:bold;
+      
+    }
+    
+    .image__description {
+      font-size:1.25em;
+      margin-top:0.25em;
+    }
+      
+      .image__overlay--primary {
+        background:#000000;
+      }
+
+/*Overlay effect created in codepen*/
+
+
+
+
+/*Batman picture is Warnes Bros Copyrighted any suggestions?*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -241,6 +361,8 @@ flex-wrap: wrap;
 }
 .copyright {
       font-size: x-small;
+      display: flex;
+      align-items: center;
 }
 
 
@@ -487,3 +609,16 @@ flex-wrap: wrap;
 
 
 
+.visa {
+      color: white;
+;
+}
+.mastercard {
+      color: white;
+}
+.paypal {
+      color: rgb(0, 106, 255);
+}
+.googlepay {
+      color: rgb(255, 255, 255);
+}
