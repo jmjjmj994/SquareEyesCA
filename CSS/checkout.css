@@ -1,0 +1,656 @@
+:root {
+    --white: #f5f5f5;
+    --zilla: #000000;
+    --purple: #8a2be2;
+    --red: #ff0000;
+    }
+        
+*.
+*::before,
+*::after{
+margin: 0%;
+padding: 0%;
+box-sizing: border-box;
+font-family: 'Poppins', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+
+body {
+    background-color: rgb(28, 3, 96);
+
+
+min-height: 100vh;
+display: grid;
+grid-template-rows: auto auto 1fr auto;
+grid-template-areas: 
+'banner '
+'nav'
+'main '
+'footer';   
+}
+
+header {grid-area: banner; }
+nav {grid-area: nav;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+
+
+/*Header*/
+
+.logo {
+    display: block;
+ margin-left: auto;
+ margin-right:auto;
+    
+     width: 100px;
+     height: auto;
+     filter: brightness(1.75);
+}
+
+.logo {
+    
+   
+     width: auto;
+          height:100px
+
+}
+
+
+
+/*Header*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*navigation*/
+a {
+color: white;
+font-size: 2rem;
+text-decoration: none;
+transition: 0.3s;
+}
+a:hover {
+    color: #000000;
+}
+
+ul {
+    
+    justify-content: center;
+   margin: auto;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 15px 0;
+    border-radius: 25px;
+    border: 0.1px solid#000000;
+    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+li{
+    margin: auto;
+
+}
+li:after {
+    display: block;
+}
+li:hover:after {
+    transform: scaleX(1);
+}
+/*Navigation*/
+
+
+
+
+
+
+
+/* MAIN */
+:root {
+    --cardWidth: 280px;
+    --cardHeight: 270px;
+    --cardMargin: 1px;
+  }
+  
+
+
+  .main-section {
+    outline: 1px dotted yellow;
+    display: flex;
+    justify-content:center;
+    
+    
+    border-radius: 1rem;
+   
+  }
+  .card1 {
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    margin: var(--cardMargin);
+    
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 1);
+    border-radius: 12px;
+    
+    
+   
+   
+
+    border-radius: 12px;
+   
+   
+
+    box-sizing: border-box;
+  }
+.card2 {
+
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    margin: var(--cardMargin);
+    
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(59, 11, 71, 1);
+    border-radius: 12px;
+   
+
+    border-radius: 12px;
+ 
+    box-sizing: border-box;
+
+}
+
+.btn {
+    transition-property: background;
+    transition-duration: 3s;
+    font-weight: bold;
+    font-family: 'Poppins', sans-serif;
+    width: 50px;
+height: 3rem;
+    color: var(--zilla);
+    background: linear-gradient(90deg, rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%); 
+    
+    margin-left: 37%;
+    border-radius: 5px;
+  }
+  
+  .btn:hover {
+    background: rgb(113, 64, 236);
+  }
+
+
+  .img {
+    width: var(--cardWidth);
+    border-radius: 8px;
+    
+  }
+
+  .info {
+    color: gold;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+ }
+
+  .title {
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    font-style: 'Poppins', sans-serif;
+    font-weight: bold;
+  }
+
+
+
+
+  .image {
+    display: flex;
+    flex-wrap: wrap;
+    
+    position:relative;
+    width:100%;
+    height:35rem;
+    margin-top: 3%;
+   
+    
+  }
+  
+
+  
+  
+  
+  .image__img {
+    display: block;
+    width:50%;
+    border-radius: 1rem;
+   height: 80%;
+    
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+
+
+
+
+
+
+/*Batman picture is Warnes Bros Copyrighted any suggestions?*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*main*/
+
+
+
+
+/*Footer*/
+.footer-bar {
+display: flex;
+color: white;
+gap: 0.5em;
+width: 100%;
+flex-wrap: wrap;
+font-size: 2rem;
+font-weight: bold;
+font-size: 'Poppins', sans-serif;
+justify-content: space-between;
+
+}
+
+
+.siteinfocont {
+    margin-right: auto;
+
+}
+
+
+
+.payment {
+display: flex;
+gap:1rem;
+flex-wrap: wrap;
+
+   
+}
+
+.iconpayment {
+    color: var(--zilla);
+    
+  
+}
+.copyright {
+    font-size: x-small;
+    display: flex;
+    align-items: center;
+}
+
+
+.visa {
+    color: white;
+
+}
+.mastercard {
+    color: white;
+}
+.paypal {
+    color: rgb(0, 106, 255);
+}
+.googlepay {
+    color: rgb(255, 255, 255);
+}
+
+
+
+
+/*Footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Styling desktop *//*Styling desktop *//*Styling desktop *//*Styling desktop *//*Styling desktop *//*Styling desktop *//*Styling desktop */
+
+@media (min-width: 600px) {
+    :root {
+          --white: #f5f5f5;
+          --zilla: #000000;
+          --purple: #8a2be2;
+          --red: #ff0000;
+          }
+    *
+   
+    {
+          margin: 0%;
+          padding: 0%;
+          box-sizing: border-box;
+          font-family: 'Poppins', sans-serif;
+          }
+
+html {
+    font-size: 62.5%;
+}
+
+  
+body {        
+    background-color: var(--purple);
+      grid: 'banner banner' auto
+            'nav main' 1fr
+            'nav footer' auto
+            / 12em 1fr;
+    }
+
+
+/*Header*/
+
+    .logo {
+          display: block;
+       margin-left: auto;
+       margin-right:auto;
+          border-radius: 5%;
+           width: 150px;
+           height: auto;
+           filter: brightness(1.75);
+           
+     }
+     
+    .logo {
+          
+           border-radius: 5%;
+           width: auto;
+           height: 100px;
+    
+     }
+
+/*Header*/
+    
+    
+ /*nav*/
+
+/*navigation*/
+ul {
+    border-radius: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 60rem;
+    width: 8rem;
+    list-style: none;
+    border: 0.1px solid black;
+    
+box-shadow: 0px 10px 13px -7px #faeaea, 0px -1px 7px 12px rgb(6, 25, 233);
+}
+  
+a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    
+    }
+ 
+    
+    li{
+          margin: auto;
+    
+    }
+    li:after {
+          display: block;
+    }
+    li:hover:after {
+          transform: scaleX(1);
+    }
+    /*Navigation*/
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* MAIN */
+:root {
+    --cardWidth: 300px;
+    --cardHeight: 230px;
+    --cardMargin: 16px;
+  }
+  
+
+
+  .main-section {
+    outline: 1px dotted yellow;
+    display: flex;
+    justify-content: center;
+    
+    border-radius: 1rem;
+   
+  }
+  .card1 {
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    margin: var(--cardMargin);
+    
+    backdrop-filter: blur(16px) saturate(180%);
+    
+    background-color: rgba(17, 25, 40, 1);
+    border-radius: 12px;
+    
+    
+   
+   
+
+    border-radius: 12px;
+   
+   
+
+    box-sizing: border-box;
+  }
+.card2 {
+
+    width: var(--cardWidth);
+    height: var(--cardHeight);
+    margin: var(--cardMargin);
+    
+    backdrop-filter: blur(16px) saturate(180%);
+    
+    background-color: rgba(59, 11, 71, 1);
+    border-radius: 12px;
+   
+
+    border-radius: 12px;
+    
+
+    box-sizing: border-box;
+
+}
+  .img {
+    width: var(--cardWidth);
+    border-radius: 8px;
+    
+  }
+
+  .info {
+    color: gold;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: center;
+
+ }
+
+ 
+
+
+
+
+  .image__img {
+    
+    width:40%;
+    height:35rem;
+  
+   
+    
+  }
+  
+.image {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    flex-wrap: wrap;
+  
+
+}
+
+
+   
+
+  }
+  
+
+/* MAIN */
+
+
+
+
+/*MAIN*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Styling desktop */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*all movies */
+

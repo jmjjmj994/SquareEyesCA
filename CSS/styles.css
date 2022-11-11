@@ -20,7 +20,7 @@ html {
 
 
 body {
-      background-color: rgb(0, 0, 0);
+      background-color: rgb(28, 3, 96);
 
 
 min-height: 100vh;
@@ -78,9 +78,16 @@ footer {grid-area: footer;}
 /*navigation*/
 a {
 color: white;
+font-size: 2rem;
+text-decoration: none;
+transition: 0.3s;
 }
+a:hover {
+      color: #000000;
+}
+
 ul {
-      ;
+      
       justify-content: center;
      margin: auto;
       width: 450px;
@@ -113,9 +120,9 @@ li:hover:after {
 
 /* MAIN */
 :root {
-      --cardWidth: 250px;
-      --cardHeight: 200px;
-      --cardMargin: 16px;
+      --cardWidth: 280px;
+      --cardHeight: 270px;
+      --cardMargin: 1px;
     }
     
   
@@ -123,7 +130,8 @@ li:hover:after {
     .main-section {
       outline: 1px dotted yellow;
       display: flex;
-      justify-content: flex-start;
+      justify-content:center;
+      
       
       border-radius: 1rem;
      
@@ -161,11 +169,30 @@ li:hover:after {
      
 
       border-radius: 12px;
-      
-
+   
       box-sizing: border-box;
 
 }
+
+.btn {
+      transition-property: background;
+      transition-duration: 3s;
+      font-weight: bold;
+      font-family: 'Poppins', sans-serif;
+      width: 50px;
+height: 3rem;
+      color: var(--zilla);
+      background: linear-gradient(90deg, rgb(255, 255, 255) 100%, rgb(255, 255, 255) 100%); 
+      
+      margin-left: 37%;
+      border-radius: 5px;
+    }
+    
+    .btn:hover {
+      background: rgb(113, 64, 236);
+    }
+
+
     .img {
       width: var(--cardWidth);
       border-radius: 8px;
@@ -193,6 +220,9 @@ li:hover:after {
 
 
     .image {
+      display: flex;
+      flex-wrap: wrap;
+      
       position:relative;
       width:100%;
       height:35rem;
@@ -202,79 +232,44 @@ li:hover:after {
     }
     
 
-    .button {
-      text-decoration: none;
-      font-size: larger;
-      height: 4rem;
-      width: 10rem;
-      border-radius: 1rem;
-      font-weight: bold;
-color: white;
-      background: rgb(25,0,0);
-      background: linear-gradient(90deg, rgba(25,0,0,1) 0%, rgba(254,0,0,1) 78%);
-
-    }
+    
+    
     
     .image__img {
-      display:block;
-      width:100%;
+      display: block;
+      width:50%;
       border-radius: 1rem;
+     height: 80%;
       
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* MAIN */
 
-    /*Overlay effect from Youtube, created in codepen */
-    
-    .image__overlay {
-      position:absolute;
-      top:0;
-      left:0;
-      width:100%;
-      height:100%;
-      background: rgba(0,0,0,0.6);
-      color:white;
-      display:flex;
-      font-family: 'Quicksand';
-       flex-direction:column;
-      align-items:center;
-      opacity:0;
-      justify-content:center;
-      transition: opacity 0.30s;
-    }
-    .image__overlay--blur {
-      backdrop-filter:blur(5px);
-    }
-    .image__overlay:hover {
-      opacity:1;
-    
-    }
-     .image__overlay > * {
-      transform:translateY(20px);
-      transition:transform:0.30s;
-    }
-      
-    .image__overlay:hover > * {
-     
-      
-    }
-    
-    
-    .image__title {
-      font-size:2em;
-      font-weight:bold;
-      
-    }
-    
-    .image__description {
-      font-size:1.25em;
-      margin-top:0.25em;
-    }
-      
-      .image__overlay--primary {
-        background:#000000;
-      }
 
-/*Overlay effect created in codepen*/
 
 
 
@@ -326,7 +321,7 @@ color: white;
 gap: 0.5em;
 width: 100%;
 flex-wrap: wrap;
-font-size: 10px;
+font-size: 2rem;
 font-weight: bold;
 font-size: 'Poppins', sans-serif;
 justify-content: space-between;
@@ -408,7 +403,12 @@ flex-wrap: wrap;
 /*Styling desktop *//*Styling desktop *//*Styling desktop *//*Styling desktop *//*Styling desktop *//*Styling desktop *//*Styling desktop */
 
 @media (min-width: 600px) {
-
+      :root {
+            --white: #f5f5f5;
+            --zilla: #000000;
+            --purple: #8a2be2;
+            --red: #ff0000;
+            }
       *
      
       {
@@ -424,6 +424,7 @@ html {
 
     
 body {        
+      background-color: var(--purple);
         grid: 'banner banner' auto
               'nav main' 1fr
               'nav footer' auto
@@ -441,6 +442,7 @@ body {
              width: 150px;
              height: auto;
              filter: brightness(1.75);
+             
        }
        
       .logo {
@@ -457,8 +459,37 @@ body {
    /*nav*/
 
 /*navigation*/
-
+ul {
+      border-radius: 0;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 60rem;
+      width: 8rem;
+      list-style: none;
+      border: 0.1px solid black;
+      
+box-shadow: 0px 10px 13px -7px #faeaea, 0px -1px 7px 12px rgb(6, 25, 233);
+}
     
+a {
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      
+      }
+   
+      
+      li{
+            margin: auto;
+      
+      }
+      li:after {
+            display: block;
+      }
+      li:hover:after {
+            transform: scaleX(1);
+      }
       /*Navigation*/
       
 
@@ -475,9 +506,6 @@ body {
 
 
 
-   /*nav*/
-
-
 
 
 
@@ -486,20 +514,124 @@ body {
 
 /* MAIN */
 :root {
-      --cardWidth: 250px;
-      --cardHeight: 250px;
+      --cardWidth: 300px;
+      --cardHeight: 230px;
       --cardMargin: 16px;
     }
     
   
- 
+  
+    .main-section {
+      outline: 1px dotted yellow;
+      display: flex;
+      justify-content: center;
+      
+      border-radius: 1rem;
+     
+    }
+    .card1 {
+      width: var(--cardWidth);
+      height: var(--cardHeight);
+      margin: var(--cardMargin);
+      
+      backdrop-filter: blur(16px) saturate(180%);
+      
+      background-color: rgba(17, 25, 40, 1);
+      border-radius: 12px;
+      
+      
+     
+     
 
+      border-radius: 12px;
+     
+     
 
+      box-sizing: border-box;
+    }
+.card2 {
 
+      width: var(--cardWidth);
+      height: var(--cardHeight);
+      margin: var(--cardMargin);
+      
+      backdrop-filter: blur(16px) saturate(180%);
+      
+      background-color: rgba(59, 11, 71, 1);
+      border-radius: 12px;
+     
 
+      border-radius: 12px;
+      
 
+      box-sizing: border-box;
 
 }
+    .img {
+      width: var(--cardWidth);
+      border-radius: 8px;
+      
+    }
+
+    .info {
+      color: gold;
+      font-size: 1.5rem;
+      display: flex;
+      justify-content: center;
+
+   }
+
+   
+
+
+
+
+    .image__img {
+      
+      width:40%;
+      height:35rem;
+    
+     
+      
+    }
+    
+.image {
+      display: flex;
+      justify-content: center;
+      gap: 1em;
+      flex-wrap: wrap;
+    
+
+}
+
+ 
+     
+
+    }
+    
+ 
+/* MAIN */
+
+
+
+
+/*MAIN*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Styling desktop */
