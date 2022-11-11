@@ -20,8 +20,7 @@ html {
 
 
 body {
-      background-color: rgba(0, 0, 0, 0.973);
-
+     background: var(--zilla);
 
 min-height: 100vh;
 display: grid;
@@ -86,7 +85,10 @@ a:hover {
       color: #000000;
 }
 
-ul {
+
+
+
+.nav-ul {
       
       justify-content: center;
      margin: auto;
@@ -97,7 +99,7 @@ ul {
       padding: 15px 0;
       border-radius: 25px;
       border: 0.1px solid#000000;
-      box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+      box-shadow: 0 4px 8px 0 #000dff, 0 6px 20px 0 rgba(26, 0, 158, 0.19);
 }
 
 li{
@@ -120,146 +122,92 @@ li:hover:after {
 
 /* MAIN */
 :root {
-      --cardWidth: 280px;
-      --cardHeight: 270px;
+      --cardWidth: 169px;
+      --cardHeight: 200px;
       --cardMargin: 1px;
     }
     
-  
-  
-    .main-section {
+  .btn {
+margin-left: 30%;
+height: 3rem;
+width: auto;
+background: rgb(255, 255, 255);
+border-radius: 5px;
+cursor: pointer;
+border: none;
+color: #000000;
+font-weight: bold;
+font-family: 'Roboto', sans-serif;
+      transition: 1s;
      
+  }
+
+  .btn:hover {
+
+transform: scaleX(1.2);
+  }
+
+
+
+
+
+
+
+
+.movie-name {
+      color: white;
       display: flex;
-      justify-content:center;
-      
-      margin-top: 5%;
-      
-     gap: 1em;
-    }
-    
+      justify-content: center;
+      font-size: 13px;
+}
+ .movie-container {
+      font-size: 10px;
+      margin-top: 10%;
+      font-weight: bold;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+grid-area: 20px;
+flex-direction: row;
+gap: 3em;
+font-weight: bold;
 
- 
-
-    .card1 {
-      width: var(--cardWidth);
-      height: var(--cardHeight);
-      margin: var(--cardMargin);
-      
-      backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
-      background-color: hsla(252, 91%, 9%, 0.671);
-      
-      
-     
-     
-
-      border-radius: 12px;
-     
-     
-
-      box-sizing: border-box;
-    }
-.card2 {
-
-      width: var(--cardWidth);
-      height: var(--cardHeight);
-      margin: var(--cardMargin);
-      
-      backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
-      background-color: rgb(59, 11, 71);
-      border-radius: 12px;
-     
-
-      border-radius: 12px;
-   
-      box-sizing: border-box;
-
+ }
+.movie-container-two {
+font-size: 10px;
+font-weight: bold;
+      margin-top: 10%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      grid-area: 20px;
+      flex-direction: row;
+      gap: 3em;  
 }
 
-.btn {
-      transition-property: background;
-      transition-duration: 3s;
-      
-      font-family: 'Poppins', sans-serif;
-      
-height: 3rem;
-      color: var(--purple);
-      background: linear-gradient(90deg, rgb(0, 0, 0) 100%, rgb(0, 0, 0) 100%); 
-      
-      margin-left: 35%;
-      border-radius: 5px;
-    }
-    
-    .btn:hover {
-      background: rgb(240, 0, 0);
-    }
 
 
-    .img {
+
+
+.movie {
       width: var(--cardWidth);
-      
-      
-    }
-
-    .info {
-      color: gold;
-      font-size: 1.5rem;
-      display: flex;
-      justify-content: center;
-
-   }
-
-    .title {
-      color: white;
-      font-size: 2rem;
-      display: flex;
-      justify-content: center;
-      font-style: 'Poppins', sans-serif;
-      font-weight: bold;
-    }
+      height: var(--cardHeight);
+      border-radius: 10px;
+}
 
 
 
 
-    .image {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-     width: auto;
-      height:35rem;
-      margin-top: 3%;
-     gap: 1em;
-    
-    }
-    
-
-    
-    
-    
-    .image__img {
-      display: block;
-      width:80%;
-      border-radius: 1rem;
-     height: 100%;
-      
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+      background:white;
+      height: 280px;
+      background: rgba( 26, 0, 0, 0.2 );
+      box-shadow: 0 4px 8px 0 #000227, 0 6px 20px 0 rgba(43, 0, 255, 0.19);
+backdrop-filter: blur( 3px );
+-webkit-backdrop-filter: blur( 3px );
+border-radius: 5px;
+width: 170px;
+}
 
 
 
@@ -317,6 +265,21 @@ height: 3rem;
 
 
   /*Footer*/
+  .footer-ul {
+      justify-content: center;
+     margin: 0 auto;
+      width: 450px;
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      padding: 15px 0;
+      
+     
+      box-shadow: 0 4px 8px 0 #000562, 0 6px 20px 0 rgba(2, 0, 11, 0.19);
+width: 100%;
+
+}
+
 .footer-bar {
 display: flex;
 color: white;
@@ -327,17 +290,19 @@ font-size: 2rem;
 font-weight: bold;
 font-size: 'Poppins', sans-serif;
 justify-content: space-between;
-margin-top: 2rem;
-outline: 2px dotted yellow;
-height: 10vh;
-align-items: center;
+
+
+height: 5vh;
+align-items: flex-end;
+
+width: 100%;
 
 }
 
 
 .siteinfocont {
       margin-right: auto;
-  ;
+  
 }
 
 
@@ -410,6 +375,7 @@ font-size: medium;
 }
 .about {
       cursor: pointer;
+      margin-left: 1%;
 }
 /*about*/
 
@@ -444,14 +410,13 @@ font-size: medium;
 
 @media (min-width: 600px) {
       :root {
-            --white: #f5f5f5;
+            --crazy:#000000dd;
+            --white: #ffffff;
             --zilla: #000000;
             --purple: #8a2be2;
             --red: #ff0000;
             }
-      *
-     
-      {
+      *{
             margin: 0%;
             padding: 0%;
             box-sizing: border-box;
@@ -461,77 +426,71 @@ font-size: medium;
 html {
       font-size: 62.5%;
 }
-
+header {grid-area: banner; }
+nav {grid-area: nav;}
+main {grid-area: main;}
+footer {grid-area: footer;}
     
 body {        
-      background-color: var(--purple);
+      
+      background-color: var(--crazy);
         grid: 'banner banner' auto
-              'nav main' 1fr
-              'nav footer' auto
+              'nav nav' 1fr
+              'main main'auto
+              'footer footer' auto
               / 12em 1fr;
       }
 
 
 /*Header*/
 
-      .logo {
-            display: block;
-         margin-left: auto;
-         margin-right:auto;
-            border-radius: 5%;
-             width: 150px;
-             height: auto;
-             filter: brightness(1.75);
-             
-       }
-       
-      .logo {
-            
-             border-radius: 5%;
-             width: auto;
-             height: 100px;
+.logo {
+      transition: 1s;
+      display: block;
+   margin-left: auto;
+   margin-right:auto;
       
-       }
+       width: 100px;
+       height: auto;
+       filter: brightness(1.75);
+ }
+ 
+.logo {
+      
+     
+       width: auto;
+            height:100px
+
+ }
+
+.logo:hover {
+      transform: scale(1.2);
+}
 
 /*Header*/
-      
-      
-   /*nav*/
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*navigation*/
-ul {
-      border-radius: 0;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      height: 60rem;
-      width: 8rem;
-      list-style: none;
-      border: 0.1px solid black;
-      
-box-shadow: 0px 10px 13px -7px #faeaea, 0px -1px 7px 12px rgb(6, 25, 233);
-}
-    
 a {
-      color: white;
-      font-size: 1rem;
-      font-weight: bold;
-      
-      }
-   
-      
-      li{
-            margin: auto;
-      
-      }
-      li:after {
-            display: block;
-      }
-      li:hover:after {
-            transform: scaleX(1);
-      }
-      /*Navigation*/
-      
+color: white;
+font-size: 2rem;
+text-decoration: none;
+transition: 0.3s;
+}
+a:hover {
+      color: #000000;
+}
 
 
 
@@ -542,9 +501,28 @@ a {
 
 
 
+.nav-ul {
+      display: flex;
+      flex-direction: row;
+      width: 80%;
+      height: 20%;
+      background: rgba( 255, 255, 255, 0.25 );box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );backdrop-filter: blur( 4px );-webkit-backdrop-filter: blur( 4px );border-radius: 10px;border: 1px solid rgba( 255, 255, 255, 0.18 );
+   align-items: center;
+   flex-wrap: wrap;
+   flex-basis: auto;
+}
 
+li{
+      margin: auto;
 
-
+}
+li:after {
+      display: block;
+}
+li:hover:after {
+      transform: scaleX(1);
+}
+/*Navigation*/
 
 
 
@@ -554,108 +532,124 @@ a {
 
 /* MAIN */
 :root {
-      --cardWidth: 300px;
-      --cardHeight: 230px;
-      --cardMargin: 16px;
+      --cardWidth: 180px;
+      --cardHeight: 150px;
+      --cardMargin: 1px;
     }
     
-  
-  
-    .main-section {
-      outline: 1px dotted yellow;
-      display: flex;
-      justify-content: center;
-      
-      border-radius: 1rem;
-     
-    }
-    .card1 {
-      width: var(--cardWidth);
-      height: var(--cardHeight);
-      margin: var(--cardMargin);
-      
-      backdrop-filter: blur(16px) saturate(180%);
-      
-      background-color: rgba(17, 25, 40, 1);
-      border-radius: 12px;
-      
+  .btn {
+margin-left: 33%;
+height: 2rem;
+width: auto;
+background: rgb(86, 13, 13);
+
+cursor: pointer;
+border: none;
+color: #000000;
+font-weight: ;
+font-family: 'Poppins', sans-serif;
       
      
-     
-
-      border-radius: 12px;
-     
-     
-
-      box-sizing: border-box;
-    }
-.card2 {
-
-      width: var(--cardWidth);
-      height: var(--cardHeight);
-      margin: var(--cardMargin);
-      
-      backdrop-filter: blur(16px) saturate(180%);
-      
-      background-color: rgba(59, 11, 71, 1);
-      border-radius: 12px;
-     
-
-      border-radius: 12px;
-      
-
-      box-sizing: border-box;
-
-}
-    .img {
-      width: var(--cardWidth);
-      border-radius: 8px;
-      
-    }
-
-    .info {
-      color: gold;
-      font-size: 1.5rem;
-      display: flex;
-      justify-content: center;
-
-   }
-
-   
-
-
-
-
-    .image__img {
-      
-      width:40%;
-      height:35rem;
-    
-     
-      
-    }
-    
-.image {
-      display: flex;
-      justify-content: center;
-      gap: 1em;
-      flex-wrap: wrap;
-    
-
-}
+     text-align: center;
+  }
 
  
-     
 
-    }
-    
- 
+
+
+
+
+
+.movie-name {
+      color: white;
+      display: flex;
+      justify-content: center;
+      font-size: 13px;
+      
+}
+ .movie-container {
+      font-size: 10px;
+      
+      font-weight: bold;
+display: flex;
+justify-content: space-around;
+flex-wrap: wrap;
+
+flex-direction: row;
+gap: 3em;
+font-weight: bold;
+
+
+
+ }
+
+ .movie-container-two {
+      font-size: 10px;
+      font-weight: bold;
+            
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            
+            flex-direction: row;
+            gap: 3em;
+            align-items: flex-start;
+            
+           
+            margin-top: -15px; 
+            margin-top: 5%;
+            
+      }
+
+
+
+.movie {
+      width: var(--cardWidth);
+      height: var(--cardHeight);
+      border-radius: 10px;
+}
+
+
+
+
+.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+      background:white;
+      height: 230px;
+      background: rgba( 26, 0, 0, 0.2 );
+      box-shadow: 0 4px 8px 0 #000227, 0 6px 20px 0 rgba(43, 0, 255, 0.19);
+backdrop-filter: blur( 3px );
+-webkit-backdrop-filter: blur( 3px );
+border-radius: 5px;
+width: var(--cardWidth);
+
+
+
+}
+
+
+.card1 {
+      transition: 1s;
+}
+.card1:hover {
+transform: scale3d(1.1, 1.1, 1.1);
+}
+
+}
+
+
+
+
+
+
+
 /* MAIN */
 
 
 
 
-/*MAIN*/
+
+
+/*Batman picture is Warnes Bros Copyrighted any suggestions?*/
 
 
 
@@ -674,7 +668,6 @@ a {
 
 
 
-/*Styling desktop */
 
 
 
@@ -691,6 +684,130 @@ a {
 
 
 
+/*main*/
 
-/*all movies */
+
+
+
+  /*Footer*/
+  .footer-ul {
+      justify-content: center;
+     margin: 0 auto;
+    width: 100%;
+      display: flex;
+      
+      flex-direction:column;
+      list-style: none;
+      padding: 15px 0;
+    
+      height: 4vh;
+      border-radius: 10px;
+     
+     
+
+}
+
+.footer-bar {
+display: flex;
+color: white;
+gap: 0.5em;
+width: auto;
+flex-wrap: wrap;
+font-size: 2rem;
+font-weight: bold;
+font-size: 'Poppins', sans-serif;
+justify-content: space-between;
+
+
+
+align-items: flex-end;
+
+width: 100%;
+
+}
+
+
+.siteinfocont {
+      margin-right: auto;
+  
+}
+
+
+
+.payment {
+display: flex;
+gap:1rem;
+flex-wrap: wrap;
+
+     
+}
+
+.iconpayment {
+      color: var(--zilla);
+      
+    
+}
+.copyright {
+      font-size: x-small;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+}
+
+
+.visa {
+      color: white;
+
+}
+.mastercard {
+      color: white;
+}
+.paypal {
+      color: rgb(0, 106, 255);
+}
+.googlepay {
+      color: rgb(255, 255, 255);
+}
+
+
+
+/*about*/
+.about-container {
+
+      
+      width: auto;
+      height: 50rem;
+      margin-top: 25%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 10px 0;
+      
+
+}
+
+
+.about {
+      cursor: pointer;
+      margin-left: 1%;
+}
+/*about*/
+
+/*Footer*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 

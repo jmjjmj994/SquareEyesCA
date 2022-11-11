@@ -89,15 +89,15 @@ a:hover {
 ul {
     
     justify-content: center;
-   margin: auto;
-    width: 450px;
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-    padding: 15px 0;
-    border-radius: 25px;
-    border: 0.1px solid#000000;
-    box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    margin: auto;
+     width: 450px;
+     display: flex;
+     flex-direction: row;
+     list-style: none;
+     padding: 15px 0;
+     border-radius: 25px;
+     border: 0.1px solid#000000;
+     box-shadow: 0 4px 8px 0 #000dff, 0 6px 20px 0 rgba(26, 0, 158, 0.19);
 }
 
 li{
@@ -271,16 +271,18 @@ p{
 
 
 /*Footer*/
-.footer-bar {
-display: flex;
-color: white;
-gap: 0.5em;
+.footer-ul {
+    justify-content: center;
+   margin: 0 auto;
+    width: 450px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 15px 0;
+    
+   
+    box-shadow: 0 4px 8px 0 #000562, 0 6px 20px 0 rgba(2, 0, 11, 0.19);
 width: 100%;
-flex-wrap: wrap;
-font-size: 2rem;
-font-weight: bold;
-font-size: 'Poppins', sans-serif;
-justify-content: space-between;
 
 }
 
