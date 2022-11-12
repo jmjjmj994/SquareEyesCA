@@ -1,4 +1,5 @@
 :root {
+      --crazy: #001f3f;
       --white: #f5f5f5;
       --zilla: #000000;
       --purple: #8a2be2;
@@ -20,7 +21,7 @@ html {
 
 
 body {
-     background: var(--zilla);
+     background: var(--crazy);
 
 min-height: 100vh;
 display: grid;
@@ -99,7 +100,7 @@ a:hover {
       padding: 15px 0;
       border-radius: 25px;
       border: 0.1px solid#000000;
-      box-shadow: 0 4px 8px 0 #000dff, 0 6px 20px 0 rgba(26, 0, 158, 0.19);
+      box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgb(0, 0, 0);
 }
 
 li{
@@ -273,14 +274,16 @@ width: 170px;
       flex-direction: row;
       list-style: none;
       padding: 15px 0;
-      
+      align-items: center;
      
-      box-shadow: 0 4px 8px 0 #000562, 0 6px 20px 0 rgba(2, 0, 11, 0.19);
-width: 100%;
+      box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgb(0, 0, 0);
+      overflow: auto;
+      height: 5rem;
 
 }
 
 .footer-bar {
+      
 display: flex;
 color: white;
 gap: 0.5em;
@@ -292,7 +295,8 @@ font-size: 'Poppins', sans-serif;
 justify-content: space-between;
 
 
-height: 5vh;
+
+height: 10rem;
 align-items: flex-end;
 
 width: 100%;
@@ -410,7 +414,7 @@ font-size: medium;
 
 @media (min-width: 600px) {
       :root {
-            --crazy:#000000dd;
+            --crazy:#001f3f;
             --white: #ffffff;
             --zilla: #000000;
             --purple: #8a2be2;
@@ -432,7 +436,7 @@ main {grid-area: main;}
 footer {grid-area: footer;}
     
 body {        
-      
+      height: 100vh;
       background-color: var(--crazy);
         grid: 'banner banner' auto
               'nav nav' 1fr
@@ -452,7 +456,7 @@ body {
       
        width: 100px;
        height: auto;
-       filter: brightness(1.75);
+       filter: brightness(1.7);
  }
  
 .logo {
@@ -463,9 +467,6 @@ body {
 
  }
 
-.logo:hover {
-      transform: scale(1.2);
-}
 
 /*Header*/
 
@@ -497,7 +498,11 @@ a:hover {
 
 
 
-
+.topbar {
+      outline: 1px yellow solid;
+      display: flex;
+      
+}
 
 
 
@@ -505,11 +510,12 @@ a:hover {
       display: flex;
       flex-direction: row;
       width: 80%;
-      height: 20%;
-      background: rgba( 255, 255, 255, 0.25 );box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );backdrop-filter: blur( 4px );-webkit-backdrop-filter: blur( 4px );border-radius: 10px;border: 1px solid rgba( 255, 255, 255, 0.18 );
+      height: auto;
+      box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgb(0, 0, 0);
    align-items: center;
    flex-wrap: wrap;
-   flex-basis: auto;
+   flex: 1;
+   
 }
 
 li{
@@ -569,16 +575,18 @@ font-family: 'Poppins', sans-serif;
 }
  .movie-container {
       font-size: 10px;
-      
+      justify-content: center;
       font-weight: bold;
 display: flex;
 justify-content: space-around;
 flex-wrap: wrap;
-
+align-items: flex-start;
 flex-direction: row;
-gap: 3em;
+gap: em;
 font-weight: bold;
 
+height: 45rem;
+            
 
 
  }
@@ -699,7 +707,7 @@ transform: scale3d(1.1, 1.1, 1.1);
       flex-direction:column;
       list-style: none;
       padding: 15px 0;
-    
+    flex-wrap: wrap;
       height: 4vh;
       border-radius: 10px;
      
@@ -717,7 +725,7 @@ font-size: 2rem;
 font-weight: bold;
 font-size: 'Poppins', sans-serif;
 justify-content: space-between;
-
+box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgb(0, 0, 0);
 
 
 align-items: flex-end;
@@ -727,7 +735,7 @@ width: 100%;
 }
 
 
-.siteinfocont {
+.contact {
       margin-right: auto;
   
 }
@@ -790,6 +798,10 @@ flex-wrap: wrap;
 .about {
       cursor: pointer;
       margin-left: 1%;
+      font-size: 15px
+}
+.contact {
+      font-size:15px ;
 }
 /*about*/
 
