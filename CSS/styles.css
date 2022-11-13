@@ -21,7 +21,7 @@ html {
 
 
 body {
-     background: var(--crazy);
+     background: var(--zilla);
 
 min-height: 100vh;
 display: grid;
@@ -43,17 +43,16 @@ footer {grid-area: footer;}
 
 .logo {
       display: block;
-   margin-left: auto;
-   margin-right:auto;
-      
+  
+      margin-left: auto;
        width: 100px;
        height: auto;
-       filter: brightness(1.75);
+       
  }
  
 .logo {
       
-     
+     margin-right: auto;
        width: auto;
             height:100px
 
@@ -62,13 +61,76 @@ footer {grid-area: footer;}
 
 
 /*Header*/
+/*batman.html*/
+
+
+
+
+.batman-background {
+      background-image: url(/Images/the-batman-2022-teaser-poster-batman-01-promo.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
+}
 
 
 
 
 
+.movie-information {
+     margin-top: 340px;
+     width: auto;
+     
+     
+      
+      
+}
+
+h1 {
+      font-size: x-large;
+      font-weight: bold;
+      color:white;
+}
+        .info-text {
+            font-size: 1.5rem;
+            color: white;
+            
+        }  
+        
+        .dollars {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+         #button-one {
+            background-color:white;
+           padding: 10px;
+            color: black;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 1s;
+            width: 8rem;
+            height:1.5rem;
+            font-size: small;
+            text-align: center;
+           
+            border-radius: 10px;   
+
+            
+           
+            border: none;
+            
+          }
+
+          .btn-one:hover {
+            background-position: right center; 
+            color: #fff;
+            text-decoration: none;
+          }
+         
 
 
+/*batman.html*/
 
 
 
@@ -77,16 +139,18 @@ footer {grid-area: footer;}
 
 /*navigation*/
 a {
-color: white;
+color: rgb(255, 255, 255), 0, 0);
 font-size: 2rem;
 text-decoration: none;
-transition: 0.3s;
-}
-a:hover {
-      color: #000000;
+display:block;
+color:white;
 }
 
 
+
+.cardrow2 {
+      display: none;
+}
 
 
 .nav-ul {
@@ -99,8 +163,8 @@ a:hover {
       list-style: none;
       padding: 15px 0;
       border-radius: 25px;
-      border: 0.1px solid#000000;
-      box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgb(0, 0, 0);
+      
+      box-shadow: 0 4px 8px 0 #fe000090, 0 6px 20px 0 rgba(0, 0, 0, 0.616);
 }
 
 li{
@@ -113,6 +177,8 @@ li:after {
 li:hover:after {
       transform: scaleX(1);
 }
+
+
 /*Navigation*/
 
 
@@ -124,7 +190,7 @@ li:hover:after {
 /* MAIN */
 :root {
       --cardWidth: 169px;
-      --cardHeight: 200px;
+      --cardHeight: 220px;
       --cardMargin: 1px;
     }
     
@@ -161,7 +227,7 @@ transform: scaleX(1.2);
       justify-content: center;
       font-size: 13px;
 }
- .movie-container {
+ .movie-row {
       font-size: 10px;
       margin-top: 10%;
       font-weight: bold;
@@ -174,18 +240,6 @@ gap: 3em;
 font-weight: bold;
 
  }
-.movie-container-two {
-font-size: 10px;
-font-weight: bold;
-      margin-top: 10%;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      grid-area: 20px;
-      flex-direction: row;
-      gap: 3em;  
-}
-
 
 
 
@@ -196,18 +250,44 @@ font-weight: bold;
       border-radius: 10px;
 }
 
+.cardrowbat:hover {
+transform: perspective(1000px) rotateY(10deg);
+    
+}
+      
+    
+      
+      
+.cardrowbat {
+      transition: 1s;
+      background: rgba(22, 56, 224, 0.2);
+      box-shadow: 0 4px 8px 0 #ffffff, 0 6px 20px 0 rgba(255, 255, 255, 0.694);
+backdrop-filter: blur( 3px );
+border-radius: 5px;
+width: var(--cardWidth);
+height: var(--cardHeight);
+}
 
 
 
-.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
+.cardrow1 {
       background:white;
-      height: 280px;
-      background: rgba( 26, 0, 0, 0.2 );
-      box-shadow: 0 4px 8px 0 #000227, 0 6px 20px 0 rgba(43, 0, 255, 0.19);
+height: var(--cardHeight);
+      background: rgba(22, 56, 224, 0.2);
+      box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgb(118, 0, 0);
 backdrop-filter: blur( 3px );
 -webkit-backdrop-filter: blur( 3px );
 border-radius: 5px;
 width: 170px;
+}
+
+
+.card1 {
+      transition: 0.5s;
+}
+
+.card1:hover {
+      transform: scaleY(1.2);
 }
 
 
@@ -253,13 +333,6 @@ width: 170px;
 
 
 
-
-
-
-
-
-
-
 /*main*/
 
 
@@ -277,7 +350,7 @@ width: 170px;
       align-items: center;
      
       box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgb(0, 0, 0);
-      overflow: auto;
+      
       height: 5rem;
 
 }
@@ -396,11 +469,71 @@ font-size: medium;
 
 
 
+/*Checkout page*/
+.wrapper {
+      justify-content: center;
+display: flex;
+position: relative;
+border: inset;
+border-color: red;
+width: 50rem;
+background-color: white;
+height: 60rem;
+align-items: center;
+margin: auto;
+margin-top: 1rem;
 
 
+}
 
+.movie-fieldset {
+      width: 20rem;
+      height: 40rem;
+      
+}
 
+.bat-checkout-img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      width: 20rem;
+      height: 20rem;
+}
+.name-fieldset {
+      display: flex;
+      flex-direction: column;
+      width: 20rem;
+      height: 40rem;
+      
+      
+}
 
+form {
+      color: var(--zilla);
+      font-size: 15px;
+      font-weight: bold;
+      
+}
+
+input[ type="text"] select {
+      display: inline-block;
+      
+      font-size: 15px;
+     
+}
+
+#checkout-page-button {
+      margin-top: 5%;
+      height: 4rem;
+      border: none;
+      font-size: 15px;
+
+     
+}
+#confirmation {
+      color: black;
+}
+/*checkout page*/
 
 
 
@@ -437,7 +570,7 @@ footer {grid-area: footer;}
     
 body {        
       height: 100vh;
-      background-color: var(--crazy);
+      background-color: var(--zilla);
         grid: 'banner banner' auto
               'nav nav' 1fr
               'main main'auto
@@ -484,13 +617,11 @@ body {
 
 /*navigation*/
 a {
+      
 color: white;
 font-size: 2rem;
 text-decoration: none;
-transition: 0.3s;
-}
-a:hover {
-      color: #000000;
+
 }
 
 
@@ -498,26 +629,27 @@ a:hover {
 
 
 
-.topbar {
-      outline: 1px yellow solid;
-      display: flex;
-      
-}
+
+
 
 
 
 .nav-ul {
+    
       display: flex;
       flex-direction: row;
       width: 80%;
       height: auto;
-      box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgb(0, 0, 0);
+      box-shadow: 0 4px 8px 0 #fe000090, 0 6px 20px 0 rgba(0, 0, 0, 0.616); 
+      border: 1px  rgb(0, 0, 0);
    align-items: center;
    flex-wrap: wrap;
    flex: 1;
    
 }
-
+li {
+ 
+}
 li{
       margin: auto;
 
@@ -538,8 +670,8 @@ li:hover:after {
 
 /* MAIN */
 :root {
-      --cardWidth: 180px;
-      --cardHeight: 150px;
+      --cardWidth: 290px;
+      --cardHeight: 250px;
       --cardMargin: 1px;
     }
     
@@ -573,7 +705,8 @@ font-family: 'Poppins', sans-serif;
       font-size: 13px;
       
 }
- .movie-container {
+ .movie-row
+ {
       font-size: 10px;
       justify-content: center;
       font-weight: bold;
@@ -582,7 +715,7 @@ justify-content: space-around;
 flex-wrap: wrap;
 align-items: flex-start;
 flex-direction: row;
-gap: em;
+
 font-weight: bold;
 
 height: 45rem;
@@ -591,23 +724,9 @@ height: 45rem;
 
  }
 
- .movie-container-two {
-      font-size: 10px;
-      font-weight: bold;
-            
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            
-            flex-direction: row;
-            gap: 3em;
-            align-items: flex-start;
-            
-           
-            margin-top: -15px; 
-            margin-top: 5%;
-            
-      }
+
+
+
 
 
 
@@ -619,14 +738,40 @@ height: 45rem;
 
 
 
+      
 
-.card1, .card2, .card3, .card4, .card5, .card6, .card7, .card8 {
-      background:white;
-      height: 230px;
-      background: rgba( 26, 0, 0, 0.2 );
-      box-shadow: 0 4px 8px 0 #000227, 0 6px 20px 0 rgba(43, 0, 255, 0.19);
+
+.cardrowbat:hover {
+      transform: scaleY(2);
+    
+}
+      
+    
+      
+      
+.cardrowbat {
+      transition: 1s;
+      background: rgba(22, 56, 224, 0.2);
+      box-shadow: 0 4px 8px 0 #ffffff, 0 6px 20px 0 rgba(255, 255, 255, 0.694);
 backdrop-filter: blur( 3px );
--webkit-backdrop-filter: blur( 3px );
+border-radius: 5px;
+width: var(--cardWidth);
+height: var(--cardHeight);
+}
+
+
+
+.cardrow1
+
+ {
+      display: flex;
+      
+      flex-wrap: wrap;
+      background:white;
+      height: var(--cardHeight);
+      background: rgba(22, 56, 224, 0.2);
+      box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgba(109, 9, 9, 0.694);
+backdrop-filter: blur( 3px );
 border-radius: 5px;
 width: var(--cardWidth);
 
@@ -635,14 +780,9 @@ width: var(--cardWidth);
 }
 
 
-.card1 {
-      transition: 1s;
-}
-.card1:hover {
-transform: scale3d(1.1, 1.1, 1.1);
-}
 
-}
+
+
 
 
 
@@ -656,8 +796,73 @@ transform: scale3d(1.1, 1.1, 1.1);
 
 
 
+/*batman.html*/
 
-/*Batman picture is Warnes Bros Copyrighted any suggestions?*/
+
+.batman-background {
+      background-image: url(/Images/the-batman-2022-teaser-poster-batman-01-promo.webp);
+     
+      background-repeat: no-repeat;
+      background-size:100% 50rem;
+
+}
+
+
+.movie-information {
+    padding: 20px;
+     color: white;
+     width: auto;
+     height: 30rem;
+     
+     
+      
+      
+}
+
+h1 {
+      font-size: x-large;
+      font-weight: bold;
+}
+        .info-text {
+            font-size: 1.5rem;
+            ;
+        }  
+        
+        .dollars {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+         #button-one {
+            background-color:white;
+            padding: 10px;
+             color: black;
+             font-weight: bold;
+             text-align: center;
+             text-transform: uppercase;
+             transition: 1s;
+             width: 10rem;
+             height:3.5rem;
+             font-size: small;
+            text-align: center;
+            
+             border-radius: 10px;   
+ 
+             
+            
+             border: none;
+             
+          }
+
+          .btn-one:hover {
+            background-position: right center; 
+            color: #fff;
+            text-decoration: none;
+          }
+         
+
+
+/*batman.html*/
+
 
 
 
@@ -717,7 +922,7 @@ transform: scale3d(1.1, 1.1, 1.1);
 
 .footer-bar {
 display: flex;
-color: white;
+
 gap: 0.5em;
 width: auto;
 flex-wrap: wrap;
@@ -725,7 +930,7 @@ font-size: 2rem;
 font-weight: bold;
 font-size: 'Poppins', sans-serif;
 justify-content: space-between;
-box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgb(0, 0, 0);
+outline: 5px solid black;
 
 
 align-items: flex-end;
@@ -803,6 +1008,8 @@ flex-wrap: wrap;
 .contact {
       font-size:15px ;
 }
+
+
 /*about*/
 
 /*Footer*/
@@ -821,5 +1028,7 @@ flex-wrap: wrap;
 
 
 
+
+}
 
 
