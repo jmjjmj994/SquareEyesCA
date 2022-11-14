@@ -88,8 +88,12 @@ border: 1px solid rgba(255, 255, 255, 0.125);
 }
 
 .btn-confirm {
-      '
+      
       width: 13rem;
+}
+
+.btn-buy {
+      margin-top: 5px;
 }
 
 /*BUTTONS*/
@@ -359,8 +363,31 @@ h1 {
             color: white;
         }
      
-         
+        .movie--key--info {
+           
+            width: 20rem;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+        .movie-key-info {
+            color: white;
+            
+            font-size: 12px;
+            outline: 2px white;
+            
+        }
 
+        .fa-star {
+            color: yellow;
+        }
+        .dollars {
+            margin: 0;
+            font-size: 2rem;
+            font-weight: bold;
+            color: white;
+             
+        }
 
 /*batman.html*/
 
@@ -384,7 +411,7 @@ border: none;
 border-radius: 12px;
 
 margin: auto;
-width: 50rem;
+width: 37rem;
 
 height: 40rem;
 
@@ -398,8 +425,8 @@ margin-top: 5rem;
 .name-fieldset {
       display: flex;
       flex-direction: column;
-      width: 20rem;
-      height: 36rem;
+      width: 10rem;
+      height: 30rem;
      
       background-color:rgba(0, 0, 0, 0);
       border: none;
@@ -409,6 +436,7 @@ margin-top: 5rem;
 }
 .movie-checkout-container {
       gap: 2rem;
+      
 height:30rem;
 display: flex;
 flex-direction: column;
@@ -440,7 +468,6 @@ input[ type="text"] select {
 }
 
 
-
      
 
 #confirmation {
@@ -455,7 +482,7 @@ input[ type="text"] select {
        align-items: center;
        justify-content: center;
        flex-direction: column;
-       width: 50rem;
+       width: 30rem;
        height: 40rem;
        margin: auto;
        margin-top: 5rem;
@@ -489,8 +516,8 @@ justify-content: center;
       display: flex;
       justify-content:space-between;
       
-      width: 40rem;
-      height: 12rem;
+      width: 25rem;
+      height: 8rem;
       font-size: 15px;
       font-weight: bold;
       
@@ -508,8 +535,8 @@ border-radius: 10px;
 }
 
 .img-confirm {
-      width: 11rem;
-      height: 12rem;
+      width: 8rem;
+      height: 8rem;
       margin-right: 10rem;
       border-radius: 10px;
 }
@@ -593,6 +620,7 @@ border-radius: 2px;
 
 }
 .btn-buy {
+      margin-top: 10px;
     height: 3rem;
 }
 
@@ -637,6 +665,7 @@ display: flex;
       width: 100%;
       
       
+      
 }
 
 
@@ -651,15 +680,15 @@ nav a {
 }
 
 .faic  {
-      font-size: 15px;
+      font-size: 20px;
 }
 .faicc {
-      font-size: 15px;
+      
       padding: 4px;
 }
 .logo {
-      width: 200px;
-      height: 200px;
+      width: 230px;
+      height: 230px;
       
       padding: 20px 40px;
       height: auto;
@@ -887,11 +916,29 @@ h1 {
         .info-text {
             font-size: 1.5rem;
             color: white;
-           display: none;
-           
+          width: 45rem;
+          
+           margin-bottom: 15px;
             
         }  
-        
+
+        .movie--key--info {
+            
+            width: 30rem;
+            display: flex;
+            justify-content: space-around;
+        }
+        .movie-key-info {
+            color: white;
+            font-weight: bold;
+            font-size: 15px;
+            
+            
+        }
+
+        .fa-star {
+            color: yellow;
+        }
         .dollars {
             font-size: 2.5rem;
             font-weight: bold;
@@ -968,6 +1015,7 @@ input[ type="text"] select {
 
 input {
       height: 3rem;
+      
 }
 
 
