@@ -1,5 +1,5 @@
 :root {
-      --crazy: #00204a;
+      --crazy: #0b0b34;
       --white: #f5f5f5;
       --zilla: #000000;
       --purple: #8a2be2;
@@ -21,7 +21,7 @@ html {
 
 
 body {
-     background: var(--zilla);
+     background: var(--crazy);
 
 min-height: 100vh;
 display: grid;
@@ -34,160 +34,99 @@ grid-template-areas:
 }
 
 header {grid-area: banner; }
-nav {grid-area: nav;}
+nav {grid-area: nav; }
 main {grid-area: main;}
 footer {grid-area: footer;}
+#main-index-html-padding {
+      padding: 50px;
+}
 
-
-/*Header*/
-
+/*BUTTONS*/
 a {
-      color: rgb(255, 255, 255), 0, 0);
-      font-size: 2rem;
       text-decoration: none;
-      display:block;
-      color:white;
-      }
-      
-      
-      
-   
+      color: var(--white);
+}
+.btn {
+color: white;
+text-decoration: none;
+width: 8rem;  
+backdrop-filter: blur(25px) saturate(200%);
+-webkit-backdrop-filter: blur(25px) saturate(200%);
+background-color: rgba(0, 77, 219, 1);
+border-radius: 2px;
+border: 1px solid rgba(255, 255, 255, 0.125);
+}
+.btn-buy {
+    
+}
 
 
-      
-
-
-
-
-      .nav-ul {
-      
-            justify-content: center;
-           margin: auto;
-            width: ;
-            display: flex;
-            flex-direction: row;
-            list-style: none;
-            padding: 15px 0;
-           
-            
-            box-shadow: 0 4px 8px 0 #b1aaaa90, 0 6px 20px 0 rgba(0, 0, 0, 0.616);
-      }
-      
-      li{
-            margin: auto;
-      
-      }
-      li:after {
-            display: block;
-      }
-      li:hover:after {
-            transform: scaleX(1);
-      }
-
+/*BUTTONS*/
 
 /*Header*/
-/*batman.html*/
-
-
-
-
-.batman-background {
-      background-image: url(/Images/the-batman-2022-teaser-poster-batman-01-promo.webp);
-      background-size: contain;
-      background-repeat: no-repeat;
-}
-
-
-
-
-
-.movie-information {
-     margin-top: 340px;
-     width: auto;
-     
-     
-      
-      
-}
-
-h1 {
-      font-size: x-large;
-      font-weight: bold;
-      color:white;
-}
-        .info-text {
-            font-size: 1.5rem;
-            color: white;
-            
-        }  
-        
-        .dollars {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: white;
-        }
-         #button-one {
-            background-color:white;
-           padding: 10px;
-            color: black;
-            font-weight: bold;
-            text-align: center;
-            text-transform: uppercase;
-            transition: 1s;
-            width: 8rem;
-            height:1.5rem;
-            font-size: small;
-            text-align: center;
-           
-            border-radius: 10px;   
-
-            
-           
-            border: none;
-            
-          }
-
-          .btn-one:hover {
-            background-position: right center; 
-            color: #fff;
-            text-decoration: none;
-          }
-         
-
-
-/*batman.html*/
-
-
-
-
-
-
-a {
-color: rgb(255, 234, 234), 0, 0);
-font-size: 2rem;
-text-decoration: none;
-display:block;
-color:white;
-}
-
-
-
-.cardrow2 {
+nav, 
+#menu-checkbox {
       display: none;
+     background: #001f3f;
+     height: ;
+      
+      
 }
-
-
-
-li{
-      margin: auto;
-
-}
-li:after {
+#menu-checkbox:checked ~ nav {
       display: block;
 }
-li:hover:after {
-      transform: scaleX(1);
+header {
+      position: relative;
+      
 }
+nav{
+      position: absolute;
+      background
+      
+      
+}
+ nav p {
+      color: white;
+      font-size: 5px;
+      padding: 6px;
+ }
+nav a {
+      display:block;
+      color: rgb(255, 255, 255);
+      padding: 30px 10px;
+     display: flex;
+    
+    
+     
+}
+
+.fa-bars {
+      color: var(--white);
+      font-size:25px;
+     font-weight: bold;
+      cursor: pointer;
+      
+}
+.faic  {
+      font-size: 15px;
+}
+.faicc {
+      font-size: 15px;
+      padding: 4px;
+}
+.logo {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right:auto;
+      margin-top:-2.5rem;
+}
+
+/*Header*/
+
+
+
 
 
 
@@ -196,44 +135,12 @@ li:hover:after {
 
 /* MAIN */
 :root {
-      --cardWidth: 169px;
-      --cardHeight: 220px;
+      --cardWidth: 125px;
+      --cardHeight: 180px;
       --cardMargin: 1px;
     }
     
-  .btn {
-margin-left: 30%;
-height: 3rem;
-width: auto;
-background: rgb(255, 255, 255);
-border-radius: 5px;
-cursor: pointer;
-border: none;
-color: #000000;
-font-weight: bold;
-font-family: 'Roboto', sans-serif;
-      transition: 1s;
-     
-  }
 
-  .btn:hover {
-
-transform: scaleX(1.2);
-  }
-
-
-
-
-
-
-
-
-.movie-name {
-      color: white;
-      display: flex;
-      justify-content: center;
-      font-size: 13px;
-}
  .movie-row {
       font-size: 10px;
       margin-top: 10%;
@@ -254,10 +161,25 @@ font-weight: bold;
 .movie {
       width: var(--cardWidth);
       height: var(--cardHeight);
-      border-radius: 10px;
+      border-radius: 5px;
 }
 
-.cardrowbat:hover {
+.cardrow {
+      background:white;
+height: var(--cardHeight);
+width: var(--cardWidth);
+     
+      
+backdrop-filter: blur( 3px );
+-webkit-backdrop-filter: blur( 3px );
+border-radius: 5px;
+transition: 0.5s;
+}
+
+.cardrow:hover {
+      transform: scaleY(1.1);
+}
+.card-batman:hover {
 transform: perspective(1000px) rotateY(10deg);
     
 }
@@ -265,7 +187,7 @@ transform: perspective(1000px) rotateY(10deg);
     
       
       
-.cardrowbat {
+.card-batman {
       transition: 1s;
       background: rgba(22, 56, 224, 0.2);
       box-shadow: 0 4px 8px 0 #ffffff, 0 6px 20px 0 rgba(255, 255, 255, 0.694);
@@ -277,33 +199,6 @@ height: var(--cardHeight);
 
 
 
-.cardrow1 {
-      background:white;
-height: var(--cardHeight);
-      background: rgba(22, 56, 224, 0.2);
-      box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgb(118, 0, 0);
-backdrop-filter: blur( 3px );
--webkit-backdrop-filter: blur( 3px );
-border-radius: 5px;
-width: 170px;
-}
-
-
-.card1 {
-      transition: 0.5s;
-}
-
-.card1:hover {
-      transform: scaleY(1.2);
-}
-
-
-
-
-
-
-
-
 
 /* MAIN */
 
@@ -312,7 +207,6 @@ width: 170px;
 
 
 
-/*Batman picture is Warnes Bros Copyrighted any suggestions?*/
 
 
 
@@ -331,142 +225,104 @@ width: 170px;
 
 
 
-
-
-
-
-
-
-
-
-
-/*main*/
 
 
 
 
   /*Footer*/
-  .footer-ul {
-      justify-content: center;
-     margin: 0 auto;
-      width: 450px;
+
+
+.footer-bar  {
+      background-color: purple;
+color: white;
+height: 12rem;
+display: flex;
+align-items: center;
+justify-content: space-around;
+font-size: 13px;
+align-items: flex-end;
+
+}
+
+.footer-bar span {
+     font-size: 5px;
+}
+.separator,
+.separator-,
+.separator-- {
       display: flex;
       flex-direction: row;
-      list-style: none;
-      padding: 15px 0;
-      align-items: center;      
-      height: 5rem;
-
-}
-
-.footer-bar {
+      align-items: center;
+      gap: 1rem;
       
-display: flex;
-color: white;
-gap: 0.5em;
-width: auto;
-flex-wrap: wrap;
-font-size: 2rem;
-font-weight: bold;
-font-size: 'Poppins', sans-serif;
-justify-content: space-between;
-height: 10rem;
-align-items: flex-end;
-width: 100%;
-
 }
 
-.about {
-      font-size: 15px;
-}
-.contact {
-      font-size: 10px;
-}
-
-.siteinfocont {
-      margin-right: auto;
-  
-}
+/*Footer*/
 
 
 
-.payment {
-display: flex;
-gap:1rem;
-flex-wrap: wrap;
 
-     
+
+/*about page*/
+#aboutpage {
+      color: white;
+      background-color: rgb(231, 1, 1);
+      font-size: ;
+      height: 20rem;  
+      text-align: center;
 }
 
-.iconpayment {
-      color: var(--zilla);
-      
+#aboutpage > p {
     
 }
-.copyright {
-      font-size: x-small;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
+
+
+
+/*batman.html*/
+
+
+
+
+.batman-background {
+      background-image: url(/Images/the-batman-2022-teaser-poster-batman-01-promo.webp);
+      background-size: contain;
+      background-repeat: no-repeat;
 }
 
 
-.visa {
-      color: white;
 
-}
-.mastercard {
-      color: white;
-}
-.paypal {
-      color: rgb(0, 106, 255);
-}
-.googlepay {
-      color: rgb(255, 255, 255);
-}
 
-/*Footer*/
 
-/*about*/
-.about-container {
-
+.movie-information {
       
-      width: auto;
-      height: 50rem;
-      margin-top: 25%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 10px 0;
+     margin-top: 223px;
+     width: 100%;
+     height: 30rem;
+     
       
-
 }
 
-.info-container {
-
-width: 50rem;
-height: 40rem;
-padding: 15px 0;
-
+h1 {
+      font-size: x-large;
+      font-weight: bold;
+      color:white;
 }
-
-.info {
-font-weight: bold;
-color: white;
-font-size: medium;
-
-}
-.about {
-      cursor: pointer;
-      margin-left: 1%;
-}
-/*about*/
-
-/*Footer*/
-
+        .info-text {
+            font-size: 1.5rem;
+            color: white;
+            
+        }  
+        
+        .dollars {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+     
+         
 
 
-
+/*batman.html*/
 
 
 
@@ -485,7 +341,7 @@ backdrop-filter: blur(16px) saturate(180%);
 -webkit-backdrop-filter: blur(16px) saturate(180%);
 background-color: rgba(17, 25, 40, 0.75);
 border-radius: 12px;
-border: 1px solid rgba(255, 255, 255, 0.125);
+
 margin: auto;
 width: 50rem;
 
@@ -516,8 +372,7 @@ margin-top: 5rem;
 .bat-checkout-img {
       width: 20rem;
       height:37rem;
-     
-
+   
       border-radius: 4px;
 }
 
@@ -537,19 +392,10 @@ input[ type="text"] select {
      
 }
 
-#checkout-page-button {
-      margin-top: 5%;
-      
-      border: none;
-      font-size: 15px;
-      font-weight: bold;
-      width: 20rem;
-      background:conic-gradient( #ac0000, #d7140690);
-      border-radius:5px;
 
 
      
-}
+
 #confirmation {
       color: black;
 }
@@ -571,7 +417,7 @@ input[ type="text"] select {
 -webkit-backdrop-filter: blur(16px) saturate(180%);
 background-color: rgba(17, 25, 40, 0.75);
 border-radius: 12px;
-border: 1px solid rgba(255, 255, 255, 0.125);
+
 
 
  }
@@ -609,7 +455,7 @@ box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
 backdrop-filter: blur( 8px );
 -webkit-backdrop-filter: blur( 8px );
 border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+
       
 }
 
@@ -626,24 +472,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
       margin-right: 1rem;
 }
 
-#confirm-btn{
-      border: none;
-      background: rgba( 25, 0, 165, 0.1 );
-box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-backdrop-filter: blur( 8px );
--webkit-backdrop-filter: blur( 8px );
-border-radius: 10px;
-border: 1px solid rgba( 255, 255, 255, 0.18 );
-width: 15rem;
-height: 5rem;
-margin-top: 10px;
-color: white;
-font-weight: bold;
-transition: 2s;
-}
-#confirm-btn:hover {
-      background: rgba( 25, 0, 165, 0.1 );
-}
+
 /* Confirmation page */
 
 
@@ -656,7 +485,7 @@ transition: 2s;
 
 @media (min-width: 600px) {
       :root {
-            --crazy:#001f3f;
+            --crazy:#0b0b34;
             --white: #ffffff;
             --zilla: #000000;
             --purple: #8a2be2;
@@ -675,12 +504,23 @@ html {
 }
 header {grid-area: banner; }
 nav {grid-area: nav;}
-main {grid-area: main;}
+main {grid-area: main; 
+      background-image: linear-gradient(
+            0deg,
+            hsl(0deg 0% 0%) 0%,
+            hsl(250deg 100% 9%) 34%,
+            hsl(251deg 100% 9%) 68%,
+            hsl(253deg 100% 9%) 100%
+          );
+
+
+
+}
 footer {grid-area: footer;}
     
 body {        
       height: 100vh;
-      background-color: var(--grey);
+      background-color: var(--crazy);
         grid: 'banner banner' auto
               'nav nav' 1fr
               'main main'auto
@@ -689,71 +529,92 @@ body {
       }
 
 
-/*Header*/
 
-
-
-
-/*Header*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*navigation*/
+/*BUTTONS*/
 a {
-      
+      text-decoration: none;
+      color: var(--white);
+}
+.btn {
 color: white;
-font-size: 2rem;
 text-decoration: none;
-
+width: 8rem;  
+backdrop-filter: blur(25px) saturate(200%);
+-webkit-backdrop-filter: blur(25px) saturate(200%);
+background-color: rgba(0, 77, 219, 1);
+border-radius: 2px;
+border: 1px solid rgba(255, 255, 255, 0.125);
 }
-
-
-
-
-
-
-
-
-
-
-
-.nav-ul {
+.btn-buy {
     
-      display: flex;
-      flex-direction: row;
-      width: 100%;
-      height: auto;
-      box-shadow: 0 4px 8px 0 #fe000090, 0 6px 20px 0 rgba(0, 0, 0, 0.616); 
-      border: 1px  rgb(0, 0, 0);
-   align-items: center;
-   flex-wrap: wrap;
-   flex: 1;
-   
 }
-li {
- 
-}
-li{
-      margin: auto;
 
+
+/*BUTTONS*/
+
+/*Header*/
+
+nav, 
+#menu-checkbox {
+      display: none;
+     background: #001f3f;
+     height: ;
+      
+      
 }
-li:after {
+#menu-checkbox:checked ~ nav {
       display: block;
 }
-li:hover:after {
-      transform: scaleX(1);
+header {
+      position: relative;
+      
 }
-/*Navigation*/
+nav{
+      position: absolute;
+      background
+      
+      
+}
+ nav p {
+      color: white;
+      font-size: 5px;
+      padding: 6px;
+ }
+nav a {
+      display:block;
+      color: rgb(255, 255, 255);
+      padding: 30px 10px;
+     display: flex;
+    
+    
+     
+}
+
+.fa-bars {
+      color: var(--white);
+      font-size:25px;
+     font-weight: bold;
+      cursor: pointer;
+      
+}
+.faic  {
+      font-size: 15px;
+}
+.faicc {
+      font-size: 15px;
+      padding: 4px;
+}
+.logo {
+      width: 100px;
+      height: auto;
+      display: block;
+      margin-left: auto;
+      margin-right:auto;
+      margin-top:-2.5rem;
+}
+/*Header*/
+
+
 
 
 
@@ -763,62 +624,25 @@ li:hover:after {
 
 /* MAIN */
 :root {
-      --cardWidth: 290px;
-      --cardHeight: 250px;
+      --cardWidth: 150px;
+      --cardHeight: 200px;
       --cardMargin: 1px;
     }
     
-  .btn {
-margin-left: 33%;
-height: 2rem;
-width: auto;
-background: rgb(86, 13, 13);
 
-cursor: pointer;
-border: none;
-color: #000000;
-font-weight: ;
-font-family: 'Poppins', sans-serif;
-      
-     
-     text-align: center;
-  }
-
- 
-
-
-
-
-
-
-.movie-name {
-      color: white;
-      display: flex;
-      justify-content: center;
-      font-size: 13px;
-      
-}
- .movie-row
- {
+ .movie-row {
       font-size: 10px;
-      justify-content: center;
+     
       font-weight: bold;
 display: flex;
-justify-content: space-around;
+justify-content: center;
 flex-wrap: wrap;
-align-items: flex-start;
+grid-area: 20px;
 flex-direction: row;
-
+gap: 3rem;
 font-weight: bold;
 
-height: 45rem;
-            
-
-
  }
-
-
-
 
 
 
@@ -826,23 +650,33 @@ height: 45rem;
 .movie {
       width: var(--cardWidth);
       height: var(--cardHeight);
-      border-radius: 10px;
+      border-radius: 5px;
 }
 
-
-
+.cardrow {
+      background:white;
+height: var(--cardHeight);
+width: var(--cardWidth);
+     
       
+backdrop-filter: blur( 3px );
+-webkit-backdrop-filter: blur( 3px );
+border-radius: 5px;
+transition: 0.5s;
+}
 
-
-.cardrowbat:hover {
-      transform: scaleY(2);
+.cardrow:hover {
+      transform: scaleY(1.1);
+}
+.card-batman:hover {
+transform: perspective(1000px) rotateY(10deg);
     
 }
       
     
       
       
-.cardrowbat {
+.card-batman {
       transition: 1s;
       background: rgba(22, 56, 224, 0.2);
       box-shadow: 0 4px 8px 0 #ffffff, 0 6px 20px 0 rgba(255, 255, 255, 0.694);
@@ -854,34 +688,6 @@ height: var(--cardHeight);
 
 
 
-.cardrow1
-
- {
-      display: flex;
-      
-      flex-wrap: wrap;
-      background:white;
-      height: var(--cardHeight);
-      background: rgba(22, 56, 224, 0.2);
-      box-shadow: 0 4px 8px 0 #000000, 0 6px 20px 0 rgba(109, 9, 9, 0.694);
-backdrop-filter: blur( 3px );
-border-radius: 5px;
-width: var(--cardWidth);
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
 
 /* MAIN */
 
@@ -889,68 +695,119 @@ width: var(--cardWidth);
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /*Footer*/
+
+
+.footer-bar  {
+      background-color: purple;
+color: white;
+height: 12rem;
+display: flex;
+align-items: center;
+justify-content: space-around;
+font-size: 13px;
+align-items: flex-end;
+
+}
+
+.footer-bar span {
+     font-size: 5px;
+}
+.separator,
+.separator-,
+.separator-- {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      gap: 1rem;
+      
+}
+
+/*Footer*/
+
+
+
+
+
+/*about page*/
+#aboutpage {
+      color: white;
+      background-color: rgb(231, 1, 1);
+      font-size: ;
+      height: 20rem;  
+      text-align: center;
+}
+
+#aboutpage > p {
+    
+}
+
+
+
 /*batman.html*/
+
+
 
 
 .batman-background {
       background-image: url(/Images/the-batman-2022-teaser-poster-batman-01-promo.webp);
-     
+      background-size: contain;
       background-repeat: no-repeat;
-      background-size:100% 50rem;
-
 }
 
 
+
+
+
 .movie-information {
-    padding: 20px;
-     color: white;
-     width: auto;
+      
+     margin-top: 223px;
+     width: 100%;
      height: 30rem;
      
-     
-      
       
 }
 
 h1 {
       font-size: x-large;
       font-weight: bold;
+      color:white;
 }
         .info-text {
             font-size: 1.5rem;
-            ;
+            color: white;
+            
         }  
         
         .dollars {
             font-size: 1.5rem;
             font-weight: bold;
+            color: white;
         }
-         #button-one {
-            background-color:white;
-            padding: 10px;
-             color: black;
-             font-weight: bold;
-             text-align: center;
-             text-transform: uppercase;
-             transition: 1s;
-             width: 10rem;
-             height:3.5rem;
-             font-size: small;
-            text-align: center;
-            
-             border-radius: 10px;   
- 
-             
-            
-             border: none;
-             
-          }
-
-          .btn-one:hover {
-            background-position: right center; 
-            color: #fff;
-            text-decoration: none;
-          }
+     
          
 
 
@@ -963,165 +820,181 @@ h1 {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*main*/
-
-
-
-
-  /*Footer*/
-  .footer-ul {
+/*Checkout page*/
+.wrapper {
       justify-content: center;
-     margin: 0 auto;
-    width: 100%;
-      display: flex;
-      
-      flex-direction:column;
-      list-style: none;
-      padding: 15px 0;
-    flex-wrap: wrap;
-      height: 4vh;
-      border-radius: 10px;
-     
-     
+display: flex;
+position: relative;
+align-items: center;
+backdrop-filter: blur(16px) saturate(180%);
+-webkit-backdrop-filter: blur(16px) saturate(180%);
+background-color: rgba(17, 25, 40, 0.75);
+border-radius: 12px;
+
+margin: auto;
+width: 50rem;
+
+height: 55rem;
+
+
+margin-top: 5rem;
+
 
 }
 
-.footer-bar {
-display: flex;
 
-gap: 0.5em;
-width: auto;
-flex-wrap: wrap;
+.name-fieldset {
+      display: flex;
+      flex-direction: column;
+      width: 20rem;
+      height: 36rem;
+      backdrop-filter: blur(16px) saturate(180%);
+      -webkit-backdrop-filter: blur(16px) saturate(180%);
+      background-color: rgba(17, 25, 40, 0.75);
+      border-radius: 12px;
+      border:none;
+      border-radius: 4px;
+     
+     
+}
+
+.bat-checkout-img {
+      width: 20rem;
+      height:37rem;
+   
+      border-radius: 4px;
+}
+
+
+
+form {
+      color: var(--white);
+      font-size: 15px;
+      font-weight: bold;
+      
+}
+
+input[ type="text"] select {
+      display: inline-block;
+      
+      font-size: 15px;
+     
+}
+
+
+
+     
+
+#confirmation {
+      color: black;
+}
+/*Checkout page*/
+
+/* Confirmation page */
+
+.order-confirm-container {
+      display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       width: 50rem;
+       height: 55rem;
+       margin: auto;
+       margin-top: 5rem;
+     
+       backdrop-filter: blur(16px) saturate(180%);
+-webkit-backdrop-filter: blur(16px) saturate(180%);
+background-color: rgba(17, 25, 40, 0.75);
+border-radius: 12px;
+
+
+
+ }
+
+
+.text-confirm  > h1{
 font-size: 2rem;
-font-weight: bold;
-font-size: 'Poppins', sans-serif;
-justify-content: space-between;
-outline: 5px solid black;
 
-
-align-items: flex-end;
-
-width: 100%;
-
-}
-
-
-.contact {
-      margin-right: auto;
-  
-}
-
-
-
-.payment {
+height: 20rem;
+width: 40rem;
+color: rgb(255, 255, 255);
 display: flex;
-gap:1rem;
-flex-wrap: wrap;
+justify-content: center;
 
-     
-}
 
-.iconpayment {
-      color: var(--zilla);
-      
-    
-}
-.copyright {
-      font-size: x-small;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
 }
 
 
-.visa {
-      color: white;
-
-}
-.mastercard {
-      color: white;
-}
-.paypal {
-      color: rgb(0, 106, 255);
-}
-.googlepay {
-      color: rgb(255, 255, 255);
-}
-
-
-
-/*about*/
-.about-container {
-
-      
-      width: auto;
-      height: 50rem;
-      margin-top: 25%;
-      display: flex;
-      justify-content: center;
+.product-confirm  {
       align-items: center;
-      padding: 10px 0;
+      display: flex;
+      justify-content:space-between;
       
+      width: 40rem;
+      height: 12rem;
+      font-size: 15px;
+      font-weight: bold;
+      
+      color: white;
 
+
+
+      background: rgba( 25, 0, 165, 0.1 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 8px );
+-webkit-backdrop-filter: blur( 8px );
+border-radius: 10px;
+
+      
+}
+
+.img-confirm {
+      width: 11rem;
+      height: 12rem;
+      margin-right: 10rem;
+      border-radius: 10px;
+}
+.confirm-price {
+      align-items: flex-end;
+      display: flex;
+     
+      margin-right: 1rem;
 }
 
 
-.about {
-      cursor: pointer;
-      margin-left: 1%;
-      font-size: 15px
+/* Confirmation page */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
-.contact {
-      font-size:15px ;
-}
-
-
-/*about*/
-
-/*Footer*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-}
-
-
