@@ -35,11 +35,32 @@ grid-template-areas:
 
 header {grid-area: banner; }
 nav {grid-area: nav; }
-main {grid-area: main;}
+main {grid-area: main;
+     
+
+}
 footer {grid-area: footer;}
 #main-index-html-padding {
       padding: 50px;
+      
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*BUTTONS*/
 a {
@@ -56,10 +77,20 @@ background-color: rgba(0, 77, 219, 1);
 border-radius: 2px;
 border: 1px solid rgba(255, 255, 255, 0.125);
 }
-.btn-buy {
-    
+
+
+.btn:hover {
+      
+      
+      border: 1px solid var(--zilla);
+      transition: 0.5s;
+      cursor: pointer;
 }
 
+.btn-confirm {
+      '
+      width: 13rem;
+}
 
 /*BUTTONS*/
 
@@ -75,10 +106,7 @@ nav,
 #menu-checkbox:checked ~ nav {
       display: block;
 }
-header {
-      position: relative;
-      
-}
+
 nav{
       position: absolute;
       background
@@ -115,12 +143,12 @@ nav a {
       padding: 4px;
 }
 .logo {
-      width: 100px;
-      height: auto;
+      width: 140px;
+      height: 170px;
       display: block;
       margin-left: auto;
       margin-right:auto;
-      margin-top:-2.5rem;
+      margin-top:-60px;
 }
 
 /*Header*/
@@ -157,11 +185,13 @@ font-weight: bold;
 
 
 
-
-.movie {
+.movie{
+      
       width: var(--cardWidth);
       height: var(--cardHeight);
-      border-radius: 5px;
+      
+      box-shadow: -4px 4px 5px 0 #000;
+      transition: 0.8s;
 }
 
 .cardrow {
@@ -233,19 +263,21 @@ height: var(--cardHeight);
 
 
 .footer-bar  {
-      background-color: purple;
+      
 color: white;
-height: 12rem;
+height: 1rem;
 display: flex;
 align-items: center;
 justify-content: space-around;
 font-size: 13px;
 align-items: flex-end;
-
+flex-wrap: wrap;
 }
 
 .footer-bar span {
-     font-size: 5px;
+     font-size: 6px;
+     display: flex;
+     
 }
 .separator,
 .separator-,
@@ -254,7 +286,7 @@ align-items: flex-end;
       flex-direction: row;
       align-items: center;
       gap: 1rem;
-      
+ 
 }
 
 /*Footer*/
@@ -280,13 +312,20 @@ align-items: flex-end;
 
 /*batman.html*/
 
+.cardrow-desktop {
+      display: none;
+}
 
 
+.bat-poster {
+     width: 100%;
+     height: 300px;
+     margin-left: auto;
+     margin-right: auto;
+     display: block;
+   
+    border-radius: 20px;
 
-.batman-background {
-      background-image: url(/Images/the-batman-2022-teaser-poster-batman-01-promo.webp);
-      background-size: contain;
-      background-repeat: no-repeat;
 }
 
 
@@ -294,11 +333,12 @@ align-items: flex-end;
 
 
 .movie-information {
-      
-     margin-top: 223px;
-     width: 100%;
+      padding: 5px;
+     width: 80%;
      height: 30rem;
+     padding: 5px 10px;
      
+    
       
 }
 
@@ -339,13 +379,14 @@ position: relative;
 align-items: center;
 backdrop-filter: blur(16px) saturate(180%);
 -webkit-backdrop-filter: blur(16px) saturate(180%);
-background-color: rgba(17, 25, 40, 0.75);
+background-color: rgba(0, 0, 0, 0.507);
+border: none;
 border-radius: 12px;
 
 margin: auto;
 width: 50rem;
 
-height: 55rem;
+height: 40rem;
 
 
 margin-top: 5rem;
@@ -361,17 +402,24 @@ margin-top: 5rem;
       height: 36rem;
       backdrop-filter: blur(16px) saturate(180%);
       -webkit-backdrop-filter: blur(16px) saturate(180%);
-      background-color: rgba(17, 25, 40, 0.75);
-      border-radius: 12px;
-      border:none;
-      border-radius: 4px;
+      background-color: rgba(0, 0, 0, 0.507);
+      border: none;
+     
      
      
 }
+.movie-checkout-container {
+      gap: 2rem;
+height:30rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
 
 .bat-checkout-img {
-      width: 20rem;
-      height:37rem;
+    
+      height:25rem;
    
       border-radius: 4px;
 }
@@ -409,13 +457,14 @@ input[ type="text"] select {
        justify-content: center;
        flex-direction: column;
        width: 50rem;
-       height: 55rem;
+       height: 40rem;
        margin: auto;
        margin-top: 5rem;
      
        backdrop-filter: blur(16px) saturate(180%);
--webkit-backdrop-filter: blur(16px) saturate(180%);
-background-color: rgba(17, 25, 40, 0.75);
+       -webkit-backdrop-filter: blur(16px) saturate(180%);
+       background-color: rgba(0, 0, 0, 0.507);
+       border: none;
 border-radius: 12px;
 
 
@@ -476,7 +525,9 @@ border-radius: 10px;
 /* Confirmation page */
 
 
-
+.movie-category-list {
+      display: none;
+}
 
 
 
@@ -536,67 +587,70 @@ a {
       color: var(--white);
 }
 .btn {
-color: white;
+color: rgb(255, 255, 255);
 text-decoration: none;
-width: 8rem;  
-backdrop-filter: blur(25px) saturate(200%);
--webkit-backdrop-filter: blur(25px) saturate(200%);
-background-color: rgba(0, 77, 219, 1);
+
 border-radius: 2px;
-border: 1px solid rgba(255, 255, 255, 0.125);
+
 }
 .btn-buy {
-    
+    height: 3rem;
 }
+
+.btn-checkout {
+height: 3rem;
+}
+.btn-confirm {
+width: 12rem;
+height: 5rem;
+}
+
+
+.btn:hover {
+      
+      
+      border: 1px solid var(--zilla);
+      transition: 0.5s;
+      cursor: pointer;
+}
+
+      
 
 
 /*BUTTONS*/
 
 /*Header*/
 
-nav, 
-#menu-checkbox {
-      display: none;
-     background: #001f3f;
-     height: ;
-      
-      
-}
-#menu-checkbox:checked ~ nav {
-      display: block;
-}
 header {
-      position: relative;
+      top: 0;
+      position: -webkit-sticky;
+      position: sticky;
+      z-index:1;
       
-}
-nav{
-      position: absolute;
-      background
-      
-      
-}
- nav p {
-      color: white;
-      font-size: 5px;
-      padding: 6px;
- }
-nav a {
-      display:block;
-      color: rgb(255, 255, 255);
-      padding: 30px 10px;
-     display: flex;
-    
-    
-     
 }
 
-.fa-bars {
-      color: var(--white);
-      font-size:25px;
-     font-weight: bold;
-      cursor: pointer;
+nav {
+display: flex;
+      position: static;
+  justify-content:space-around;
+  background: var(--crazy);
+      justify-content: space-around;
+      width: 100%;
+      
       
 }
+
+
+
+nav a {
+      display: inline-block;
+}
+
+
+.hamburger-icon {
+      display: none;
+}
+
 .faic  {
       font-size: 15px;
 }
@@ -605,13 +659,18 @@ nav a {
       padding: 4px;
 }
 .logo {
-      width: 100px;
+      width: 200px;
+      height: 200px;
+      
+      padding: 20px 40px;
       height: auto;
       display: block;
       margin-left: auto;
       margin-right:auto;
-      margin-top:-2.5rem;
+      margin-top:-113px;
+      
 }
+
 /*Header*/
 
 
@@ -624,12 +683,12 @@ nav a {
 
 /* MAIN */
 :root {
-      --cardWidth: 150px;
-      --cardHeight: 200px;
+      --cardWidth: 170px;
+      --cardHeight: 220px;
       --cardMargin: 1px;
     }
     
-
+    
  .movie-row {
       font-size: 10px;
      
@@ -651,6 +710,14 @@ font-weight: bold;
       width: var(--cardWidth);
       height: var(--cardHeight);
       border-radius: 5px;
+      cursor: pointer;
+      box-shadow: -4px 4px 5px 0 #000;
+transition: 0.8s;
+}
+
+.movies:hover {
+      transform: translateY(-10px);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
 }
 
 .cardrow {
@@ -697,13 +764,22 @@ height: var(--cardHeight);
 
 
 
+.movie-category-list {
+      
+      color: white;
+      display: flex;
+      justify-content: flex-start;
+      height: 7vh;
+      width: 50rem;
+      align-items: center;
+      font-size: 4rem;
+      font-weight: bold;
+      margin-top: 40px;
+      margin-bottom: -90px;
 
 
-
-
-
-
-
+  
+}
 
 
 
@@ -722,9 +798,9 @@ height: var(--cardHeight);
 
 
 .footer-bar  {
-      background-color: purple;
+      background:var(--crazy);
 color: white;
-height: 12rem;
+height: 5rem;
 display: flex;
 align-items: center;
 justify-content: space-around;
@@ -772,10 +848,12 @@ align-items: flex-end;
 
 
 
-.batman-background {
-      background-image: url(/Images/the-batman-2022-teaser-poster-batman-01-promo.webp);
-      background-size: contain;
-      background-repeat: no-repeat;
+.bat-poster {
+     width: 70rem ;
+      height: 35rem;
+     box-shadow: -1px 82px 121px 78px rgba(242,0,0,0.27);
+     -webkit-box-shadow: -1px 82px 121px 78px rgba(242,0,0,0.27);
+     -moz-box-shadow: -1px 82px 121px 78px rgba(242,0,0,0.27);
 }
 
 
@@ -784,26 +862,29 @@ align-items: flex-end;
 
 .movie-information {
       
-     margin-top: 223px;
+     
      width: 100%;
      height: 30rem;
-     
+     text-align: center;
+  
+    
       
 }
 
 h1 {
-      font-size: x-large;
+      font-size: xx-large;
       font-weight: bold;
       color:white;
 }
         .info-text {
             font-size: 1.5rem;
             color: white;
+           display: none;
             
         }  
         
         .dollars {
-            font-size: 1.5rem;
+            font-size: 2.5rem;
             font-weight: bold;
             color: white;
         }
@@ -822,22 +903,23 @@ h1 {
 
 /*Checkout page*/
 .wrapper {
-      justify-content: center;
+      justify-content:space-around;
 display: flex;
 position: relative;
 align-items: center;
 backdrop-filter: blur(16px) saturate(180%);
 -webkit-backdrop-filter: blur(16px) saturate(180%);
-background-color: rgba(17, 25, 40, 0.75);
+background-color: rgba(0, 0, 0, 0.507);
 border-radius: 12px;
 
 margin: auto;
-width: 50rem;
+width: 80rem;
 
 height: 55rem;
 
 
 margin-top: 5rem;
+margin-bottom: 5rem;
 
 
 }
@@ -846,14 +928,14 @@ margin-top: 5rem;
 .name-fieldset {
       display: flex;
       flex-direction: column;
-      width: 20rem;
+      width: 25rem;
       height: 36rem;
+      
       backdrop-filter: blur(16px) saturate(180%);
       -webkit-backdrop-filter: blur(16px) saturate(180%);
-      background-color: rgba(17, 25, 40, 0.75);
-      border-radius: 12px;
-      border:none;
-      border-radius: 4px;
+      background-color: rgba(0, 0, 0, 0.507);
+      border: none;
+    
      
      
 }
@@ -868,46 +950,44 @@ margin-top: 5rem;
 
 
 form {
-      color: var(--white);
-      font-size: 15px;
-      font-weight: bold;
-      
+      color: rgb(179, 178, 178);
+     
 }
 
 input[ type="text"] select {
       display: inline-block;
-      
-      font-size: 15px;
      
+}
+
+input {
+      height: 3rem;
 }
 
 
 
-     
-
 #confirmation {
-      color: black;
+      color: rgb(0, 0, 0);
 }
 /*Checkout page*/
 
 /* Confirmation page */
 
 .order-confirm-container {
+      gap: 2rem;
       display: flex;
        align-items: center;
        justify-content: center;
        flex-direction: column;
-       width: 50rem;
+       width: 80rem;
        height: 55rem;
        margin: auto;
        margin-top: 5rem;
-     
+       margin-bottom: 5rem;
        backdrop-filter: blur(16px) saturate(180%);
--webkit-backdrop-filter: blur(16px) saturate(180%);
-background-color: rgba(17, 25, 40, 0.75);
-border-radius: 12px;
-
-
+       -webkit-backdrop-filter: blur(16px) saturate(180%);
+       background-color: rgba(0, 0, 0, 0.507);
+       border-radius: 12px;
+      
 
  }
 
@@ -967,34 +1047,33 @@ border-radius: 10px;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
