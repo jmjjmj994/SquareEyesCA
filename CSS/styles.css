@@ -352,6 +352,7 @@ h1 {
       color:white;
 }
         .info-text {
+            margin-top: 10px;
             font-size: 1.5rem;
             color: white;
             
