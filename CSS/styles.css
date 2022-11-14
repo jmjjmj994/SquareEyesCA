@@ -298,7 +298,7 @@ flex-wrap: wrap;
 /*about page*/
 #aboutpage {
       color: white;
-      background-color: rgb(231, 1, 1);
+      
       font-size: ;
       height: 20rem;  
       text-align: center;
@@ -325,7 +325,7 @@ flex-wrap: wrap;
      display: block;
    
     border-radius: 20px;
-
+    box-shadow: rgb(255, 0, 0) 0px 0px 0px 2px, rgb(255, 0, 0) 0px 4px 6px -1px, rgba(255, 0, 0, 0.993) 0px 1px 0px inset;
 }
 
 
@@ -400,9 +400,8 @@ margin-top: 5rem;
       flex-direction: column;
       width: 20rem;
       height: 36rem;
-      backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
-      background-color: rgba(0, 0, 0, 0.507);
+     
+      background-color:rgba(0, 0, 0, 0);
       border: none;
      
      
@@ -831,29 +830,34 @@ align-items: flex-end;
 /*about page*/
 #aboutpage {
       color: white;
-      background-color: rgb(231, 1, 1);
+      
+      width: auto;
       font-size: ;
-      height: 20rem;  
+      height: 70rem;  
       text-align: center;
 }
 
 #aboutpage > p {
-    
+    font-size: 20px;
+    padding: 20px;
 }
 
+#aboutpag
 
 
 /*batman.html*/
 
 
-
+.poster-section {
+      width: 80rem;
+      height: 70rem;
+}
 
 .bat-poster {
-     width: 70rem ;
-      height: 35rem;
-     box-shadow: -1px 82px 121px 78px rgba(242,0,0,0.27);
-     -webkit-box-shadow: -1px 82px 121px 78px rgba(242,0,0,0.27);
-     -moz-box-shadow: -1px 82px 121px 78px rgba(242,0,0,0.27);
+     
+     width: 70rem;
+      height: auto;
+      box-shadow: rgb(255, 0, 0) 0px 0px 0px 2px, rgb(255, 0, 0) 0px 4px 6px -1px, rgba(255, 0, 0, 0.993) 0px 1px 0px inset;
 }
 
 
@@ -866,6 +870,10 @@ align-items: flex-end;
      width: 100%;
      height: 30rem;
      text-align: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+
   
     
       
@@ -880,6 +888,7 @@ h1 {
             font-size: 1.5rem;
             color: white;
            display: none;
+           
             
         }  
         
@@ -913,12 +922,12 @@ background-color: rgba(0, 0, 0, 0.507);
 border-radius: 12px;
 
 margin: auto;
-width: 80rem;
+width: 70rem;
 
-height: 55rem;
+height: 70rem;;
 
 
-margin-top: 5rem;
+
 margin-bottom: 5rem;
 
 
@@ -930,11 +939,9 @@ margin-bottom: 5rem;
       flex-direction: column;
       width: 25rem;
       height: 36rem;
-      
-      backdrop-filter: blur(16px) saturate(180%);
-      -webkit-backdrop-filter: blur(16px) saturate(180%);
-      background-color: rgba(0, 0, 0, 0.507);
       border: none;
+     background-color:rgba(1, 1, 69, 0.324);
+     
     
      
      
@@ -978,11 +985,12 @@ input {
        align-items: center;
        justify-content: center;
        flex-direction: column;
-       width: 80rem;
-       height: 55rem;
+       width: 70rem;
+
+       height: 70rem;
+       
        margin: auto;
-       margin-top: 5rem;
-       margin-bottom: 5rem;
+      
        backdrop-filter: blur(16px) saturate(180%);
        -webkit-backdrop-filter: blur(16px) saturate(180%);
        background-color: rgba(0, 0, 0, 0.507);
